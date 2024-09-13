@@ -4,12 +4,12 @@
 <br/><br/>
 </p>
 
-# Intro to sc/snRNA-seq and Advanced visualization Workshop
+# Intro to sc/snRNA-seq and Advanced visualization with R Shiny Workshop
 
-The `Intro to sc/snRNA-seq and Advanced visualization Workshop` is an introduction to sc/sn-RNA-Sequencing data. The course discusses applications and key steps for sc/sn-RNA-Sequencing. The focal point of the course will be exploring and utilizing the R shiny app.
+The `Intro to sc/snRNA-seq and Advanced visualization with R Shiny` provides an introduction to QC of raw sc/snRNA-seq data, QC of sc/snRNA-seq alignment data, and cell-leveling filtering of sc/snRNA-seq data. Additionally, this course demonstrates how R Shiny applications can be utilized to explore sc/snRNA-seq data and produce figures for sc/snRNA-seq analysis.
  
  
-For the visualization portion of the workshop, we will be using the dataset displayed in the [R Shiny apps](https://vsx2-deletion.stjude.org/).
+For the visualization portion of the workshop, we utilize the [Honnell et al., 2022](https://doi.org/10.1038/s41467-021-27924-y) cohort displayed in the [R Shiny app](https://vsx2-deletion.stjude.org/).
 
  
 ## Below is the main directory structure listing the analyses and data files used in this repository
@@ -17,7 +17,7 @@ For the visualization portion of the workshop, we will be using the dataset disp
 ```
 ├── gitignore.txt
 ├── lectures
-|   └── ...-2024-09-18.pptx
+|   └── Intro-to-sc-snRNA-seq-2024-09-18.pptx
 └── README.md
 └── resources
 ```
