@@ -20,9 +20,9 @@ Note: to access this page, you will need to click the link to login on the homep
 ```
 ├── gitignore.txt
 ├── lectures
+|   ├── StJude-RNA-Sequencing-and-QC-metrics-2024-09-19.pdf
 |   └── StJude-RNA-Sequencing-and-QC-metrics-2024-09-19.pptx
 └── README.md
-└── resources
 ```
 
 ## Course Authors
