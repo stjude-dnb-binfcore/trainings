@@ -1,6 +1,7 @@
 # Trainings
 
-The `Trainings` repository contains a variety of courses as part of a training series to empower researchers in the field of Developmental Neurobiology to utilize standardized computational pipelines for single-cell genomics data to make more robust discoveries in the context of pediatric cancer and other catastrophic diseases. The `Trainings` repository is an initiative of the [Bioinformatics Core at the St. Jude Children's Research Hospital](https://www.stjude.org/research/departments/developmental-neurobiology/shared-resources/bioinformatic-core.html).
+The `Trainings` repository contains a variety of training courses as aimed at empowering researchers in the field of Developmental Neurobiology to utilize standardized computational pipelines for genomics data analysis and visualization to make more robust discoveries in the context of pediatric cancer and other catastrophic diseases. The `Trainings` repository is an initiative of the [Bioinformatics Core at the St. Jude Children's Research Hospital](https://www.stjude.org/research/departments/developmental-neurobiology/shared-resources/bioinformatic-core.html).
+
 
 ## To reproduce the code in this repository:
 
