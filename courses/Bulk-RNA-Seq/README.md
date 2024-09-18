@@ -11,7 +11,8 @@ The `Intro to RNA-Seq (CAB Results)` is an introduction to bulk RNA-Sequencing d
 Please see the [CAB’s AutoMapper pipeline for generating alignment and expression quantification results (see Section E)](https://wiki.stjude.org/display/CAB/AutoMapper#AutoMapper-E.RNA-sequencing(RNA-seq)) for more information.
 
  
-Moreover, you can explore the [R Shiny apps](http://ibex.stjude.org/) CAB makes available for RNA-Seq analysis, you can follow this link:
+Moreover, you can explore the [R Shiny apps](http://ibex.stjude.org/) CAB makes available for RNA-Seq analysis.
+
 Note: to access this page, you will need to click the link to login on the homepage and then use your St. Jude username and password to login.
 
 
