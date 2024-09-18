@@ -17,9 +17,9 @@ For the visualization portion of the workshop, we utilize the [Honnell et al., 2
 ```
 ├── gitignore.txt
 ├── lectures
+|   ├── Intro-to-sc-snRNA-seq-2024-09-18.pdf
 |   └── Intro-to-sc-snRNA-seq-2024-09-18.pptx
 └── README.md
-└── resources
 ```
 
 ## Course Authors
