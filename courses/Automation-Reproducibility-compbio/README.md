@@ -1,6 +1,6 @@
 <p>
 <br/><br/>
-<img src="https://github.com/stjudeDNBBinfCore-Trainings/figures/img/DNB-BINF-Core-logo.png"  width="1000" >
+<img src="https://github.com/stjudeDNBBinfCore/Trainings/figures/img/DNB-BINF-Core-logo.png"  width="500" >
 <br/><br/>
 </p>
 
@@ -11,7 +11,7 @@ The Automation and Reproducibility in Computational Biology is a training series
 
 | Audience | Computational Skills | Prerequisites | Duration |
 :----------|:----------|:----------|:----------|
-| Biologists | Intermediate | None | Shell basics|
+| Biologists/Bioinformaticians | Beginner/Intermediate | None | Shell basics|
 
 
 ## Learning Objectives
