@@ -1,4 +1,4 @@
-![DNB-BINF-Core-logo](https://github.com/stjudeDNBBinfCore/Trainings/tree/main/figures/img/DNB-BINF-Core-logo.png)
+![DNB-BINF-Core-logo](https://github.com/stjudeDNBBinfCore/Trainings/main/figures/img/DNB-BINF-Core-logo.png)
 
 
 # Automation and Reproducibility in Computational Biology
