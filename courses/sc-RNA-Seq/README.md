@@ -1,8 +1,5 @@
-<p>
-<br/><br/>
-<img src="https://github.com/stjudeDNBBinfCore/Trainings/figures/img/DNB-BINF-Core-logo.png"  width="500" >
-<br/><br/>
-</p>
+![DNB-BINF-Core-logo](https://github.com/stjudeDNBBinfCore/Trainings/tree/564aceb2087aa68333534effdf7187098bf28fe0/figures/img/DNB-BINF-Core-logo.png)
+
 
 # Intro to sc/snRNA-seq and Advanced visualization with R Shiny Workshop
 

@@ -14,13 +14,14 @@ git clone https://github.com/stjudeDNBBinfCore/Trainings.git
 
 2. Navigate to a training directory:
 ```
-cd $(dirname "${BASH_SOURCE[0]}")/Trainings/courses/course_of_interest
+cd $(dirname "${BASH_SOURCE[0]}")/Trainings/courses/<course_of_interest>
 ```
 
 ### Below is the main directory structure listing the analyses and data files used in this repository
 
 ```
 ├── courses
+|  ├── Automation-Reproducibility-compbio
 |  ├── Bulk-RNA-Seq
 |  └── sc-RNA-Seq
 ├── figures
