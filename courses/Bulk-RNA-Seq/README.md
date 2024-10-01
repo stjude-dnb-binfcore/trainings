@@ -12,6 +12,11 @@ Moreover, you can explore the [R Shiny apps](http://ibex.stjude.org/) CAB makes 
 Note: to access this page, you will need to click the link to login on the homepage and then use your St. Jude username and password to login.
 
 
+## Access to the workshop recording
+
+St. Jude employees can have access to the [recording from the workshop](https://sjcrh-my.sharepoint.com/:v:/g/personal/sfreshou_stjude_org/EfyT36KyuXdCoDEgCEz26Z8BMC7TidiHUK7-mXKtN3S0_A).
+
+ 
 ## Below is the main directory structure listing the analyses and data files used in this repository
 
 ```

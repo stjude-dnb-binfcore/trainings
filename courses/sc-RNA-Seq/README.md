@@ -8,7 +8,11 @@ The `Intro to sc/snRNA-seq and Advanced visualization with R Shiny` provides an 
  
 For the visualization portion of the workshop, we utilize the [Honnell et al., 2022](https://doi.org/10.1038/s41467-021-27924-y) cohort displayed in the [R Shiny app](https://vsx2-deletion.stjude.org/).
 
- 
+## Access to the workshop recording
+
+St. Jude employees can have access to the [recording from the workshop](https://sjcrh-my.sharepoint.com/:v:/g/personal/sfreshou_stjude_org/EUG4SwuqdOlHhRC1dSJJKGEBjaLTQpaPa08HjLEOKyPnVQ).
+
+
 ## Below is the main directory structure listing the analyses and data files used in this repository
 
 ```
