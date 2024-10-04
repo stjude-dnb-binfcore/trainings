@@ -20,6 +20,7 @@ cd $(dirname "${BASH_SOURCE[0]}")/Trainings/courses/<course_of_interest>
 ### Below is the main directory structure listing the analyses and data files used in this repository
 
 ```
+├── code-of-conduct.md
 ├── courses
 |  ├── Automation-Reproducibility-compbio
 |  ├── Bulk-RNA-Seq
