@@ -11,13 +11,13 @@
 | Time |  Topic  | Instructor |
 |:-----------:|:----------:|:--------:|
 | 09:30 - 09:45 | [Workshop Introduction](https://github.com/stjudeDNBBinfCore/Trainings/tree/main/courses/Automation-Reproducibility-compbio/lectures/01-Best-practices.pdf) | Dr. Antonia Chroni |
-| 09:45 - 10:20 | [Documentation & Usability](https://github.com/stjudeDNBBinfCore/Trainings/tree/main/courses/Automation-Reproducibility-compbio/lectures/01-Best-practices.pdf) | Dr. Antonia Chroni |
-| 10:20 - 10:25 | Break|  |
-| 10:30 - 11:30 | [Automation for Scientists](https://github.com/stjudeDNBBinfCore/Trainings/tree/main/courses/Automation-Reproducibility-compbio/lectures/01-Best-practices.pdf) | Dr. Antonia Chroni |
-| 11:30 - 11:40 | Break|  |
-| 11:40 - 12:00 | [Containers for Cancer Informatics](https://github.com/stjudeDNBBinfCore/Trainings/tree/main/courses/Automation-Reproducibility-compbio/lectures/01-Best-practices.pdf) | Dr. Antonia Chroni |
-| 12:00 - 12:30 | Break|  |
-| 12:35 - 13:30 | [Demo](https://github.com/stjudeDNBBinfCore/Trainings/tree/main/courses/Automation-Reproducibility-compbio/demo) | Dr. Antonia Chroni |
+| 09:45 - 10:30 | [Documentation & Usability](https://github.com/stjudeDNBBinfCore/Trainings/tree/main/courses/Automation-Reproducibility-compbio/lectures/01-Best-practices.pdf) | Dr. Antonia Chroni |
+| 10:30 - 10:35 | Break|  |
+| 10:40 - 11:40 | [Automation for Scientists](https://github.com/stjudeDNBBinfCore/Trainings/tree/main/courses/Automation-Reproducibility-compbio/lectures/01-Best-practices.pdf) | Dr. Antonia Chroni |
+| 11:40 - 11:45 | Break|  |
+| 11:45 - 12:10 | [Containers for Cancer Informatics](https://github.com/stjudeDNBBinfCore/Trainings/tree/main/courses/Automation-Reproducibility-compbio/lectures/01-Best-practices.pdf) | Dr. Antonia Chroni |
+| 12:10 - 12:30 | Break|  |
+| 12:30 - 13:30 | [Demo](https://github.com/stjudeDNBBinfCore/Trainings/tree/main/courses/Automation-Reproducibility-compbio/demo) | Dr. Antonia Chroni |
 
 
 ### Questions?
