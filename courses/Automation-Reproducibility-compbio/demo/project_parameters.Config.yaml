@@ -1,0 +1,14 @@
+# the following parameters are the same across the module #
+root_dir: "/research/dept/dnb/core_operations/Bioinformatics/achroni/GitHub/Trainings" # path to main dir of the project
+metadata_dir: "/research/dept/dnb/core_operations/Bioinformatics/zakhagrp/snRNASeq_of_DS_in_Df1_mice" # path to metadata dir of the project
+PROJECT_NAME: "snRNASeq_of_DS_in_Df1_mice"
+PI_NAME: "Stanislav Zakharenko"
+TASK_ID: "Training 1 - Demo"
+PROJECT_LEAD_NAME: "NA"
+DEPARTMENT: "Developmental Neurobiology"
+LEAD_ANALYSTS: "Antonia Chroni, PhD"
+GROUP_LEAD: "Cody A. Ramirez, PhD"
+CONTACT_EMAIL: "achroni@stjude.org"
+PIPELINE: "Training 1 - Demo"
+START_DATE: "10/10/2024"
+COMPLETION_DATE: "10/10/2024"

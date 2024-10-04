@@ -1,0 +1,208 @@
+---
+title: "Data exploratory analysis"
+author: "Antonia Chroni <achroni@stjude.org> for St. Jude Children's Research Hospital"
+output:
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    df_print: paged
+    code_folding: hide
+    toc_depth: 6
+    highlight: tango
+    number_sections: TRUE
+  pdf_document:
+    toc: TRUE
+    highlight: tango
+    number_sections: TRUE
+    latex_engine: lualatex
+    keep_tex: FALSE
+always_allow_html: TRUE
+urlcolor: blue
+linkcolor: black
+citecolor: blue
+geometry: margin=1in
+header-includes: 
+  - \usepackage{titling}
+  - \usepackage{fancyhdr}
+params:
+  root_dir: './'
+  metadata_dir: './'
+  PROJECT_NAME: './'
+  PI_NAME: './'
+  TASK_ID: './'
+  PROJECT_LEAD_NAME: './'
+  DEPARTMENT: './'
+  LEAD_ANALYSTS: './'
+  GROUP_LEAD: './'
+  CONTACT_EMAIL: './'
+  PIPELINE: './'
+  START_DATE: './'
+  COMPLETION_DATE: './'
+---
+
+```{r logo-file, echo=FALSE}
+attach(params)
+# Insert logo on the top of the html report 
+logo_file <- file.path(root_dir, "courses", "Automation-Reproducibility-compbio", "demo", "figures", "img", "DNB-BINF-Core-logo.png")
+htmltools::img(src = knitr::image_uri(logo_file), alt = "logo", style = "position:absolute; top:0; left:0; padding:0px; height:120px;")
+detach(params)
+```
+
+\addtolength{\headheight}{2.0cm} 
+\fancypagestyle{plain}{} 
+\thispagestyle{fancy}
+\fancyhead[L]{\includegraphics[height=120px]{`r logo_file`}}
+\renewcommand{\headrulewidth}{0pt}
+
+<style type="text/css">
+:root { --DNB_BINF_Core_color: #00427B;}
+
+h1.title {margin-top: 130px;
+  margin-bottom: 25px;
+  font-size: 36px;}
+
+.nobullet li {list-style-type: none;}
+
+.reporthead {font-size: 20px;}
+
+body { /* Normal */
+  font-size: 16px;
+  font-style: Arial, Helvetica, sans-serif;}
+
+h1 {
+  color: var(--DNB_BINF_Core_color);
+  font-size: 28px;
+  margin-top: 50px;}
+
+h2 {color: var(--DNB_BINF_Core_color);
+  font-size: 20px;}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  background-color: var(--DNB_BINF_Core_color);}
+</style>
+
+<a href="https://wiki.stjude.org/display/CAB">
+
+</a>
+
+\pagebreak
+
+<div class="reporthead"><br/>
+**PI: `r params$PI_NAME`**  
+**Project: `r params$PROJECT_NAME`**  
+Task: `r params$TASK_ID`  
+Project Lead(s): `r params$PROJECT_LEAD_NAME`  
+Department: `r params$DEPARTMENT`  
+
+<br />  
+
+DNB Bioinformatics Core Analysis Team: 
+<br />  
+
+>**Lead Analyst(s): `r params$LEAD_ANALYSTS`**  
+>Group Lead: `r params$GROUP_LEAD`  
+<br />
+>**Contact E-mail:** `r params$CONTACT_EMAIL`  
+>**DNB Bioinformatics Core Pipeline:** `r params$PIPELINE`  
+
+Date started: `r params$START_DATE`  
+Date completed:  `r params$COMPLETION_DATE`  
+Report generated: `r format(Sys.time(), '%H:%M:%S %Z %m/%d/%Y')` \
+
+Reviewed by: _____________________   Date: ____________ \
+</div>
+\pagebreak
+
+# Information about this notebook
+This is an exploratory analysis of the data in the project. We are investigating the number of samples per `Sex`. 
+This is a demo designed for the purposes of the `Best practices` training in the context of the `Automation and Reproducibility in Computational Biology` course. 
+
+
+# Set up
+
+```{r load-library, echo=TRUE}
+suppressPackageStartupMessages({
+  library(tidyverse)
+})
+```
+
+# Directories and paths to file Inputs/Outputs
+
+```{r set-dir-and-file-names, echo=TRUE}
+attach(params)
+demo_dir <- file.path(root_dir, "courses", "Automation-Reproducibility-compbio", "demo")
+analysis_dir <- file.path(demo_dir, "analyses", "data-exploratory-analysis") 
+
+# We will first read in metadata file as we need to define sample_name 
+metadata_file <- file.path(metadata_dir, "project_metadata.tsv") # metadata input file
+palette_file <- file.path(demo_dir, "figures", "palettes", "binary_color_palette.tsv")
+
+# File path to `plots` directory
+plots_dir <- file.path(analysis_dir, "plots") 
+if (!dir.exists(plots_dir)) {
+  dir.create(plots_dir)}
+
+figures_plots_dir <- file.path(plots_dir, "figures") 
+if (!dir.exists(figures_plots_dir)) {
+  dir.create(figures_plots_dir)}
+
+source(paste0(analysis_dir, "/util/function-create-barplot.R"))
+source(paste0(demo_dir, "/figures/scripts/theme_plot.R"))
+```
+
+# Read metadata file
+
+```{r read-metadata, echo=TRUE}
+# Read metadata
+df <- read.csv(metadata_file, sep = '\t', header = TRUE) 
+```
+
+## Color palette for plotting
+
+```{r palette, echo=TRUE}
+# Read color palette
+palette_df <- readr::read_tsv(palette_file, guess_max = 100000, show_col_types = FALSE) %>%
+  mutate(color_names = case_when(grepl("binary_1", color_names) ~ "M",
+                                     grepl("binary_2", color_names) ~ "F"))
+       
+# Define and order palette
+palette <- palette_df$hex_codes
+names(palette) <- palette_df$color_names
+```
+
+# Number of samples by Sex
+
+```{r, fig.align = "left", results = "asis", message = FALSE, warning = FALSE, echo = FALSE}
+tables1 <- df %>% count(Sex)
+caption_value = "Summary of samples per Sex"
+```
+
+```{r plot1, fig.width = 6, fig.height = 5, fig.fullwidth = TRUE}
+# Define parameters for function
+ylim <- max(tables1$n)
+
+# Run function
+fname <- paste0(figures_plots_dir, "/", "samples-per-sex.pdf")
+p <- create_barplot(plot_df = tables1, 
+                    ylim = ylim, 
+                    x_value = tables1$Sex, 
+                    use_palette = palette, 
+                    xtitle ="Type of Sex", 
+                    title_value = caption_value)
+pdf(file = fname, width = 6, height = 5)
+print(p)
+dev.off()
+```
+
+```{r echo=FALSE}
+detach(params)
+```
+
+\pagebreak
+
+# Session Info
+
+```{r echo=FALSE}
+sessionInfo()
+```
+
