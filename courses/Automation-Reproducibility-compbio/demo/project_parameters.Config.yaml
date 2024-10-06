@@ -1,5 +1,5 @@
 # the following parameters are the same across the module #
-root_dir: "/research/dept/dnb/core_operations/Bioinformatics/achroni/GitHub/Trainings" # path to main dir of the project
+root_dir: "/research/dept/dnb/core_operations/Bioinformatics/achroni/GitHub/trainings" # path to main dir of the project
 metadata_dir: "/research/dept/dnb/core_operations/Bioinformatics/zakhagrp/snRNASeq_of_DS_in_Df1_mice" # path to metadata dir of the project
 PROJECT_NAME: "snRNASeq_of_DS_in_Df1_mice"
 PI_NAME: "Stanislav Zakharenko"
