@@ -52,7 +52,7 @@ Navigate to the directory containing your Dockerfile using a terminal or command
 
 Example:
 ```{}
-cd /Users/achroni/my_favorite_repo
+cd /Users/achroni/single-cell-rna-analysis
 ```
 
 #### Build the Docker Image
@@ -60,7 +60,7 @@ Use the docker build command to create the image. The -t flag allows you to tag 
 
 Example:
 ```{}
-docker build --platform linux/amd64 -t my_favorite_repo:latest .
+docker build --platform linux/amd64 -t single-cell-rna-analysis:latest .
 ```
 
 #### Verify the Image
@@ -78,13 +78,10 @@ If you want to push the image to a registry, you may need to tag it appropriatel
 
 Example:
 ```{}
-docker tag my_favorite_repo:latest <registry>/<namespace>/my_favorite_repo:latest
-```
-
-**MINE**
-```{}
 docker tag single-cell-rna-analysis:latest svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest
 ```
+
+
 
 #### Manage the Docker Image
 Please check the [Manage the Docker Image](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html) resource on how to modify and manage Docker images.
@@ -93,31 +90,52 @@ Please check the [Manage the Docker Image](https://jhudatascience.org/Adv_Reprod
 ### Push the Image 
 If you want to share your image or deploy it elsewhere, you need to push it to a Docker registry.
 
-#### Login to the Registry
-Log in to your Docker registry to authenticate. You'll be prompted for your username and password. For St Jude employees, this will be your St Jude username/password: `docker login <registry>`
+#### Dockerhub
+You can use the same image, you just need to retag it. Here are instructions for pushing to [dockerhub](https://jsta.github.io/r-docker-tutorial/04-Dockerhub.html).
 
-Example:
+Login: `docker login --username=yourhubusername --email=youremail@company.com`
+
+Example
 ```{}
-docker login <registry>
+docker login --username=achronistjude
+docker images
 ```
 
-**MINE**
+Check the image ID that you want to push
+
+```{}
+docker tag e69202292e42 achronistjude/single-cell-rna-analysis:latest
+```
+
+Push!
+```{}
+docker push achronistjude/single-cell-rna-analysis:latest
+```
+
+Your image is now available for everyone to use! 😀
+
+
+
+#### Login and Push Image to the St Jude HPC Registry
+You can use the HPC Registry if you are creating Docker image for St Jude HPC users only. This can be useful for private repositories.
+
+Log in to your Docker registry to authenticate. You'll be prompted for your username and password. For St Jude employees, this will be your St Jude username/password: `docker login <registry>`.
+
+⚠️ Attention! You need to login to VPN to complete the following steps.⚠️
+
+Example:
 ```{}
 docker login svlprhpcreg01.stjude.org/hpcf
 ```
 
 #### Push the Image to the Registry
-Then, use the docker push command to upload your image to the registry: docker push <registry>/<namespace>/my_favorite_repo:latest
+Then, use the docker push command to upload your image to the registry: `docker push <registry>/<namespace>/my_favorite_repo:latest`
 
 Example:
 ```{}
-docker push <registry>/<namespace>/my_favorite_repo:latest
-```
-
-**MINE**
-```{}
 docker push svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest
 ```
+
 
 ## Run the Image from a Registry
 Once the Docker image is built, you can start using it 😀 
@@ -128,43 +146,29 @@ This can be before/after/regardless pushing the Docker image to a registry.
 
 Example:
 ```{}
-cd /Users/<my_username>/my_favorite_repo
+cd /Users/achroni/single-cell-rna-analysis
 ```
 
-(2) Then you can run the docker and create your docker container. The docker container can be unique and new one every time you run/execute a new set of analyses, e.g. name it here as `review`. 
+(2) Then you can run the docker and create your docker container. The docker container can be unique and new one every time you run/execute a new set of analyses, e.g. name it here as `review`: `docker run --platform linux/amd64 --name review -d -e PASSWORD=ANYTHING -p 8787:8787 -v $PWD:/home/rstudio/my_favorite_repo <registry>/<namespace>/my_favorite_repo:latest` and `docker container start review`.
 
 Example:
-```{}
-docker run --platform linux/amd64 --name review -d -e PASSWORD=ANYTHING -p 8787:8787 -v $PWD:/home/rstudio/my_favorite_repo <registry>/<namespace>/my_favorite_repo:latest
-docker container start review
-```
-
-If you go to the Docker desktop app, you will see the container running. 🙌
-
-**MINE**
 ```{}
 docker run --platform linux/amd64 --name review -d -e PASSWORD=ANYTHING -p 8787:8787 -v $PWD:/home/rstudio/single-cell-rna-analysis svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest
 docker container start review
 ```
 
+If you go to the Docker desktop app, you will see the container running 🙌
+
+
 (3) Once you execute the container, you can move to the directory and start running scripts related to your analyses.
 
+Example:
 ```{}
 docker exec -ti review bash
 
-cd /home/rstudio/my_favorite_repo
+cd /home/rstudio/single-cell-rna-analysis
 Rscript -e "rmarkdown::render(‘my-amazing-script.Rmd', clean = TRUE)"
 ```
-
-
-**MINE**
-```{}
-docker exec -ti review bash
-
-cd /home/rstudio/single-cell-RNA-analysis
-Rscript -e "rmarkdown::render(‘my-script.Rmd', clean = TRUE)"
-```
-
 
 
 
