@@ -2,113 +2,60 @@
 # How to run Docker from a Registry and from HPC ###############################
 # ##############################################################################
 
+# Pull to HPC From Dockerhub
 
-(1) Go to the HPC cluster and load module
+Pull Image From Registry → Convert to Singularity Image → Run via Singularity on HPC
+
+⚠️ Attention! You need to login to VPN to complete the following steps.⚠️
+
+
+## Start an interactive session on a compute node
+
+Open up an interactive session on a build node. Make sure you include enough memory to build your container.
 
 ```{}
-hpcf_interactive -q standard
+hpcf_interactive -q hprc_test -R "rusage[mem=8GB]"
+```
+
+## Load specific version of Singularity
+
+```{}
 module load singularity/4.1.1
 ```
 
-(2) Go to ‘my_favorite_repo` directory
-(3) Pull Image From Registry → Convert to Singularity Image → Run via Singularity on HPC: `singularity run docker://<url to docker registry>/<container_name>:<tag>`
 
-Example:
+## Run from docker image (converts to SIF and stores in ~/.singularity)
+
+Use the following command: `singularity run docker://<yourhubusername>/<container>:<tag>`
+
+Example
 ```{}
-singularity run docker://godlovedc/lolcow:latest
+singularity run docker://achronistjude/single-cell-rna-analysis:latest
 ```
 
-(4) Obtain Singularity Image Format File → Run via Singularity on HPC
+## Build sif file
 
 Containers are typically used to run noninteractive (batch) executables on generic resources like the cloud. (i.e. submit and wait for result)
-`singularity run` executes a default command defined in the container image.
+
+`singularity run` executes a default command defined in the container image. 
+
 
 ```{}
-singularity run <container_name_tag>.sif
+singularity run single-cell-rna-analysis:latest.sif
+
+singularity exec -B $PWD:/research/dept/dnb/core_operations/Bioinformatics/achroni/GitHub/single-cell-rna-analysis docker://achronistjude/single-cell-rna-analysis:latest bash
 ```
 
-### HPC fakeroot
-
-To install with certain package managers, the builder must have root permissions within the image. 
-
-To grant this temporary permission, fakeroot implements a fake root environment for the purpose of building Singularity containers
-
-A user namespace UID/GID mapping allows a user to be root (uid 0) in a container to install packages, but have no privilege on the host.
-
-Request fakeroot id map for <username> on ServiceNow, Assignment Group: HPCF
-   - https://stjude.service-now.com/
-   - https://wiki.stjude.org/display/RC/Building+Singularity+containers+with+fakeroot
+Singularity will run and take more time to convert the first time. After this, the converted sif file will live in the home cash dir of the user. The user will still need to repeat these commands, but it will take less time to run/exec as the `run` part has been complete already. 
 
 
-#### Log onto the fakeroot node
-Open up an interactive session on a fakeroot enabled node (-q fakeroot). 
+Now you can go to your analyses directory and run your module(s).
 
 ```{}
-hpcf_interactive –q fakeroot  
-```
-
-Make sure you include enough memory to build your container.
-```{}
-hpcf_interactive -q fakeroot --mempercore 8GB
+cd /research/dept/dnb/core_operations/Bioinformatics/achroni/GitHub/single-cell-rna-analysis
+Rscript -e "rmarkdown::render(‘my-amazing-script.Rmd', clean = TRUE)"
 ```
 
 
-
-### Build Singularity Image on HPC fakeroot node→ Share via SIF File or OCI Registry 
-
-```{}
-singularity build –fakeroot <container_name_tag>.sif <container_name>.def
-singularity push oras://<url to registry>/<container_name_tag>.sif
-```
-
-### Pull to HPC From Harbor Registry
-
-Log into HPC cluster via terminal and start an interactive session on a compute node
-```{}
-hpcf_interactive –q standard –n 4
-```
-
-Load specific version of Singularity
-```{}
-module load singularity/4.1.1
-```
-
-Login to Harbor Registry
-```{}
-singularity registry login --username <username> docker://svlprhpcreg01.stjude.org 
-```
-
-Run from docker image (converts to SIF and stores in ~/.singularity)
-```{}
-singularity run docker://svlprhpcreg01.stjude.org/hpcf/<container>:<tag>
-```
-
-Build local sif file from docker image and run from local file
-```{}
-singularity build <container_tag>.sif docker://svlprhpcreg01.stjude.org/hpcf/<container>:<tag>
-singularity run <container_tag>.sif
-```
-
-
-### Singularity OCI Registry 
-
-Open Container Initiative (OCI) Format
-Singularity has partially adopted the Docker based OCI format over their original SIF format to improve conversion compatibility. This --oci mode is the default for the latest versions of Singularity
-
-Build a Singularity Image Format (SIF) file and Run 
-```{}
-singularity build --fakeroot lolcow.sif lolcow.def
-singularity run lolcow.sif
-```
-
-Share your SIF Image via the Registry
-```{}
-singularity registry login -u <username> oras://svlprhpcreg01.stjude.org
-singularity push lolcow.sif oras://svlprhpcreg01.stjude.org/hpcf/lolcow:ceb
-singularity run oras://svlprhpcreg01.stjude.org/hpcf/lolcow:ceb
-```
-
-Notes on [SIF-OCI compatibility](https://docs.sylabs.io/guides/latest/user-guide/oci_runtime.html).
-
-
+**The same process/commands are necessary for users submitting a lsf job. These commands will be part of the lsf script already. **
 
