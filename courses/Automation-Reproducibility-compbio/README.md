@@ -1,5 +1,10 @@
-![DNB-BINF-Core-logo](https://github.com/stjudeDNBBinfCore/Trainings/tree/564aceb2087aa68333534effdf7187098bf28fe0/figures/img/DNB-BINF-Core-logo.png)
 
+<p align="center">
+  <img src="[figures/img/DNB-BINF-Core-logo.svg](https://github.com/stjudeDNBBinfCore/trainings/blob/add-use-docker/figures/img/DNB-BINF-Core-logo.svg)" alt="DNB-BINF-Core-logo" width="660px" />
+</p>
+<p align="center">
+  <a href="https://github.com/stjudeDNBBinfCore/Trainings/main/LICENSE"><img src="https://img.shields.io/github/license/kids-first/kf-template-repo.svg?style=for-the-badge"></a>
+</p>
 
 # Automation and Reproducibility in Computational Biology
 
