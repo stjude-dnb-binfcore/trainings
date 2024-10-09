@@ -1,5 +1,10 @@
-![DNB-BINF-Core-logo](https://github.com/stjudeDNBBinfCore/Trainings/tree/564aceb2087aa68333534effdf7187098bf28fe0/figures/img/DNB-BINF-Core-logo.png)
 
+<p align="center">
+  <img src="[figures/img/DNB-BINF-Core-logo.svg](https://github.com/stjudeDNBBinfCore/trainings/blob/add-use-docker/figures/img/DNB-BINF-Core-logo.svg)" alt="DNB-BINF-Core-logo" width="660px" />
+</p>
+<p align="center">
+  <a href="https://github.com/stjudeDNBBinfCore/Trainings/main/LICENSE"><img src="https://img.shields.io/github/license/kids-first/kf-template-repo.svg?style=for-the-badge"></a>
+</p>
 
 # Automation and Reproducibility in Computational Biology
 
@@ -19,7 +24,7 @@ The Automation and Reproducibility in Computational Biology is a training series
    - Automation for Scientists
    - Containers for Cancer Informatics
    - Demo
-2. Tools and Resources
+2. Tools and Resources - UPCOMING
    - Reproducibility and Open sources
    - Leadership in Computational Biology/ Cancer Informatics
    - Data management
@@ -32,7 +37,6 @@ The course is intended for cancer informatics tool developers, particularly thos
 
 ## Lessons
 * [01-Best-practices](https://github.com/stjudeDNBBinfCore/Trainings/tree/main/courses/Automation-Reproducibility-compbio/lectures/)
-* [02-Tools-Resources](https://github.com/stjudeDNBBinfCore/Trainings/tree/main/courses/Automation-Reproducibility-compbio/lectures/)
 
 
 ## Description
@@ -58,17 +62,23 @@ Materials:
 ├── demo
 ├── gitignore.txt
 ├── lectures
-|   ├── 01-Best-practices.pdf
-|   ├── 01-Best-practices.pptx
-|   ├── 02-Tools-Resources.pdf
-|   └── 02-Tools-Resources.pptx
+|   ├── 01-Best-practices-workshop-introduction-reproducibility.pdf
+|   ├── 01-Best-practices-documentation-usability.pdf
+|   ├── 01-Best-practices-automation-for-scientists.pdf
+|   ├── 01-Best-practices-containers.pdf
+|   └── 01-Best-practices-demo.pdf
 ├── README.md
 ├── resources
-|   ├── 01-GitHub.docx
-|   ├── 02-GitHub-personal-token.docx
-|   ├── 03-GitHub-GitKraken-desktop.docx
-|   ├── 04-integrate-GitHub-with-Teams.docx
+|   ├── 01-GitHub.md
+|   ├── 02-GitHub-personal-token.md
+|   ├── 03-GitHub-GitKraken-desktop.md
+|   ├── 04-integrate-GitHub-with-Teams.md
+|   ├── 05-install-docker-manually.md
+|   ├── 06-how-to-use-docker-command-line.md
+|   ├── 07-how-to-run-docker-image-from-HPC.md
+|   ├── figures
 |   ├── git-cheat-sheet.pdf
+|   ├── gitignore.txt
 |   └── links-to-resources.md
 └── schedule.md
 ```
