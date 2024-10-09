@@ -82,7 +82,6 @@ docker tag single-cell-rna-analysis:latest svlprhpcreg01.stjude.org/hpcf/single-
 ```
 
 
-
 #### Manage the Docker Image
 Please check the [Manage the Docker Image](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html) resource on how to modify and manage Docker images.
 
@@ -104,12 +103,19 @@ docker images
 Check the image ID that you want to push
 
 ```{}
-docker tag e69202292e42 achronistjude/single-cell-rna-analysis:latest
+docker tag 29e7e04e5334 achronistjude/single-cell-rna-analysis:latest
 ```
 
 Push!
 ```{}
 docker push achronistjude/single-cell-rna-analysis:latest
+```
+
+Sanity check!
+```{}
+docker run --platform linux/amd64 --name test -d -e PASSWORD=ANYTHING -p 8787:8787 -v $PWD:/home/rstudio/single-cell-rna-analysis achronistjude/single-cell-rna-analysis:latest
+docker container start test
+docker exec -ti test ls -al /var 
 ```
 
 Your image is now available for everyone to use! 😀
