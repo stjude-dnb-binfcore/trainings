@@ -75,7 +75,8 @@ Materials:
 |   ├── 04-integrate-GitHub-with-Teams.md
 |   ├── 05-install-docker-manually.md
 |   ├── 06-how-to-use-docker-command-line.md
-|   ├── 07-how-to-run-docker-image-from-HPC.md
+|   ├── 07-how-to-run-docker-image-from-HPC-with-Dockerhub-registry.md
+|   ├── 08-how-to-run-docker-image-from-HPC-with-HPC-registry.md
 |   ├── figures
 |   ├── git-cheat-sheet.pdf
 |   ├── gitignore.txt
