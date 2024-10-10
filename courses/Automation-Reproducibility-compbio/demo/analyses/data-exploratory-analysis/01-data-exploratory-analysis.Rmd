@@ -174,7 +174,12 @@ names(palette) <- palette_df$color_names
 
 ```{r, fig.align = "left", results = "asis", message = FALSE, warning = FALSE, echo = FALSE}
 tables1 <- df %>% count(Sex)
+cat("  \n<div style=\"font-size:80%\">  \n")
 caption_value = "Summary of samples per Sex"
+
+print(knitr::kable(tables1, align = "lcccc", caption = caption_value))
+cat("  \n</div>  \n")
+cat("  \n\\pagebreak  \n")
 ```
 
 ```{r plot1, fig.width = 6, fig.height = 5, fig.fullwidth = TRUE}
