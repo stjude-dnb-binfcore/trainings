@@ -9,7 +9,7 @@ This repository contains lectures, material and resources per course/training su
 
 1. Clone the repository
 ```
-git clone https://github.com/stjudeDNBBinfCore/Trainings.git
+git clone https://github.com/stjude-dnb-binfcore/Trainings.git
 ```
 
 2. Navigate to a training directory:
