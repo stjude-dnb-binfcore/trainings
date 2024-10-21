@@ -19,7 +19,7 @@ We value and respect everyone's viewpoints and experiences. Please use welcoming
 
 
 ### Questions?
-* ***If you have any questions***, please feel free to create an [issue](https://github.com/stjudeDNBBinfCore/Trainings/issues).
+* ***If you have any questions***, please feel free to create an [issue](https://github.com/stjude-dnb-binfcore/trainings/issues).
 
 
 ---
