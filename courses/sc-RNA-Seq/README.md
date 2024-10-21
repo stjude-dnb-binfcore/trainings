@@ -1,6 +1,7 @@
 ![DNB-BINF-Core-logo](https://github.com/stjudeDNBBinfCore/Trainings/tree/564aceb2087aa68333534effdf7187098bf28fe0/figures/img/DNB-BINF-Core-logo.png)
 
 
+
 # Intro to sc/snRNA-seq and Advanced visualization with R Shiny Workshop
 
 The `Intro to sc/snRNA-seq and Advanced visualization with R Shiny` provides an introduction to QC of raw sc/snRNA-seq data, QC of sc/snRNA-seq alignment data, and cell-leveling filtering of sc/snRNA-seq data. Additionally, this course demonstrates how R Shiny applications can be utilized to explore sc/snRNA-seq data and produce figures for sc/snRNA-seq analysis.
