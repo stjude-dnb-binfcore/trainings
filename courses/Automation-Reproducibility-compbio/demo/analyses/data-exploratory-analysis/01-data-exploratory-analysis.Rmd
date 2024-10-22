@@ -1,6 +1,6 @@
 ---
 title: "Data exploratory analysis"
-author: "Antonia Chroni <achroni@stjude.org> for St. Jude Children's Research Hospital"
+author: "Antonia Chroni for St. Jude Children's Research Hospital"
 output:
   html_document:
     toc: TRUE
