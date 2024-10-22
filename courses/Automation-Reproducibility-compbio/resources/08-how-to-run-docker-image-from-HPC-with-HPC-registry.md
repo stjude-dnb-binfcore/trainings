@@ -27,7 +27,7 @@ Use the following command: `singularity registry login --username <username> doc
 
 Example
 ```{}
-singularity registry login --username achroni docker://svlprhpcreg01.stjude.org 
+singularity registry login --username my_username docker://svlprhpcreg01.stjude.org 
 ```
 # ###################################
 
@@ -155,7 +155,7 @@ Use the following command: `singularity registry login --username <username> doc
 
 Example
 ```{}
-singularity registry login --username achroni docker://svlprhpcreg01.stjude.org 
+singularity registry login --username my_username docker://svlprhpcreg01.stjude.org 
 ```
 
 ## Run from docker image (converts to SIF and stores in ~/.singularity)
