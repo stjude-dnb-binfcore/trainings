@@ -103,7 +103,7 @@ docker images
 Check the image ID that you want to push
 
 ```{}
-docker tag 29e7e04e5334 achronistjude/sc-rna-seq-snap:latest
+docker tag 526f6bab4d6d achronistjude/sc-rna-seq-snap:latest
 ```
 
 Push!
@@ -114,8 +114,24 @@ docker push achronistjude/sc-rna-seq-snap:latest
 Sanity check!
 ```{}
 docker run --platform linux/amd64 --name test -d -e PASSWORD=ANYTHING -p 8787:8787 -v $PWD:/home/rstudio/sc-rna-seq-snap achronistjude/sc-rna-seq-snap:latest
+```
+
+
+```{}
 docker container start test
+```
+
+
+```{}
 docker exec -ti test ls -al /var 
+```
+
+
+```{}
+docker exec -ti test bash
+
+cd /home/rstudio/sc-rna-seq-snap
+Rscript -e "rmarkdown::render(‘my-amazing-script.Rmd', clean = TRUE)"
 ```
 
 Your image is now available for everyone to use! 😀
