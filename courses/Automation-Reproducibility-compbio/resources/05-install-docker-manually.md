@@ -16,9 +16,7 @@
 
 (4) Create your account.
 
-<img width="500" alt="docker-2" src="https://github.com/user-attachments/assets/2d669adc-2a99-4817-8428-4861952a6b84">
-
-
+<img width="500" alt="docker-2" src="https://github.com/user-attachments/assets/91928f73-ad16-4bfe-9c24-a94690ac709d">
 
 
 (5) Now you can sign in and it will bring you in this page. Then, you can launch the Docker desktop version. Check your email to verify your email address. Go to the settings and click on launching Docker desktop app when starting your computer (this will come handy later).
