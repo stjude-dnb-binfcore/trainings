@@ -6,4 +6,4 @@
 
 (2) You should also download the Authenticator app on your phone for using it for [Configuring two-factor authentication (2FA)](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication) that's mandatory for a lot of things/processes at GitHub.
 
-(3) [stjudeDNBBinfCore](https://github.com/stjudeDNBBinfCore) is our GitHub organization page. Please follow and ask to join!
+(3) [stjudednbbinfCore](https://github.com/stjudednbbinfCore) is our GitHub organization page. Please follow and ask to join!
