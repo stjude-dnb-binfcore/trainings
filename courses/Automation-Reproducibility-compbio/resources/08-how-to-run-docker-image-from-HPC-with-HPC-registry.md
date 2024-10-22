@@ -62,10 +62,10 @@ Containers are typically used to run noninteractive (batch) executables on gener
 
 ```{}
 singularity run single-cell-rna-analysis:latest.sif
-singularity exec -B $PWD:/research/dept/dnb/core_operations/Bioinformatics/achroni/GitHub/single-cell-rna-analysis docker://svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest bash
+singularity exec -B $PWD:./GitHub/single-cell-rna-analysis docker://svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest bash
 
 
-cd /research/dept/dnb/core_operations/Bioinformatics/achroni/GitHub/single-cell-rna-analysis
+cd ./GitHub/single-cell-rna-analysis
 run my script
 ```
 
@@ -84,14 +84,6 @@ Using the following commands: `singularity build –fakeroot <container_name_tag
 singularity build –fakeroot single-cell-rna-analysis:latest.sif single-cell-rna-analysis.def
 singularity push oras://<url to docker://svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest.sif
 ```
-
-
-
-
-
-
-
-
 
 
 

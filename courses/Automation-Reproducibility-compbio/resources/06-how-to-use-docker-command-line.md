@@ -15,18 +15,18 @@ Now that you have successfully installed Docker desktop app, let's start using i
 ## Open a Terminal
 
 Next, you will go to the command line and type the following with your Docker username/password.
-`docker login –u <your_username>`
+`docker login –u <your_username>` or `docker login –u <your_username>`.
 
 Example:
 ```{}
-docker login –u achronistjude
+docker login
 ```
 
 🎉  Login Succeeded!
 
 
 # ########################################################################################################################
-If you encounter issues during the login, from your `home_dir`, e.g. `/Users/achroni`, do the following:
+If you encounter issues during the login, from your `home_dir`, e.g. `/Users/my_username`, do the following:
 ```{}
 rm -fr ~/.docker
 ```
@@ -52,7 +52,7 @@ Navigate to the directory containing your Dockerfile using a terminal or command
 
 Example:
 ```{}
-cd /Users/achroni/single-cell-rna-analysis
+cd /Users/my_username/single-cell-rna-analysis
 ```
 
 #### Build the Docker Image
@@ -152,7 +152,7 @@ This can be before/after/regardless pushing the Docker image to a registry.
 
 Example:
 ```{}
-cd /Users/achroni/single-cell-rna-analysis
+cd /Users/my_username/single-cell-rna-analysis
 ```
 
 (2) Then you can run the docker and create your docker container. The docker container can be unique and new one every time you run/execute a new set of analyses, e.g. name it here as `review`: `docker run --platform linux/amd64 --name review -d -e PASSWORD=ANYTHING -p 8787:8787 -v $PWD:/home/rstudio/my_favorite_repo <registry>/<namespace>/my_favorite_repo:latest` and `docker container start review`.
