@@ -15,7 +15,7 @@ Now that you have successfully installed Docker desktop app, let's start using i
 ## Open a Terminal
 
 Next, you will go to the command line and type the following with your Docker username/password.
-`docker login –u <your_username>` or `docker login –u <your_username>`.
+`docker login –u <your_username>` or `docker login`.
 
 Example:
 ```{}
