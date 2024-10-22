@@ -38,7 +38,7 @@
 
 
 ### Questions?
-* ***If you get stuck due to an error*** while runnning code in the course or have follow up questions, please feel free to create an [issue](https://github.com/stjudeDNBBinfCore/Trainings/issues).
+* ***If you get stuck due to an error*** while runnning code in the course or have follow up questions, please feel free to create an [issue](https://github.com/stjude-dnb-binfcore/Trainings/issues).
 
 
 ---

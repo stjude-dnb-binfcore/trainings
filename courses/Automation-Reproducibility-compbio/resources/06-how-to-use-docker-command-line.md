@@ -15,18 +15,18 @@ Now that you have successfully installed Docker desktop app, let's start using i
 ## Open a Terminal
 
 Next, you will go to the command line and type the following with your Docker username/password.
-`docker login –u <your_username>`
+`docker login –u <your_username>` or `docker login`.
 
 Example:
 ```{}
-docker login –u achronistjude
+docker login
 ```
 
 🎉  Login Succeeded!
 
 
 # ########################################################################################################################
-If you encounter issues during the login, from your `home_dir`, e.g. `/Users/achroni`, do the following:
+If you encounter issues during the login, from your `home_dir`, e.g. `/Users/my_username`, do the following:
 ```{}
 rm -fr ~/.docker
 ```
@@ -52,7 +52,7 @@ Navigate to the directory containing your Dockerfile using a terminal or command
 
 Example:
 ```{}
-cd /Users/achroni/single-cell-rna-analysis
+cd /Users/my_username/sc-rna-seq-snap
 ```
 
 #### Build the Docker Image
@@ -60,7 +60,7 @@ Use the docker build command to create the image. The -t flag allows you to tag 
 
 Example:
 ```{}
-docker build --platform linux/amd64 -t single-cell-rna-analysis:latest .
+docker build --platform linux/amd64 -t sc-rna-seq-snap:latest .
 ```
 
 #### Verify the Image
@@ -78,7 +78,7 @@ If you want to push the image to a registry, you may need to tag it appropriatel
 
 Example:
 ```{}
-docker tag single-cell-rna-analysis:latest svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest
+docker tag sc-rna-seq-snap:latest svlprhpcreg01.stjude.org/hpcf/sc-rna-seq-snap:latest
 ```
 
 
@@ -103,19 +103,35 @@ docker images
 Check the image ID that you want to push
 
 ```{}
-docker tag 29e7e04e5334 achronistjude/single-cell-rna-analysis:latest
+docker tag 526f6bab4d6d achronistjude/sc-rna-seq-snap:latest
 ```
 
 Push!
 ```{}
-docker push achronistjude/single-cell-rna-analysis:latest
+docker push achronistjude/sc-rna-seq-snap:latest
 ```
 
 Sanity check!
 ```{}
-docker run --platform linux/amd64 --name test -d -e PASSWORD=ANYTHING -p 8787:8787 -v $PWD:/home/rstudio/single-cell-rna-analysis achronistjude/single-cell-rna-analysis:latest
+docker run --platform linux/amd64 --name test -d -e PASSWORD=ANYTHING -p 8787:8787 -v $PWD:/home/rstudio/sc-rna-seq-snap achronistjude/sc-rna-seq-snap:latest
+```
+
+
+```{}
 docker container start test
+```
+
+
+```{}
 docker exec -ti test ls -al /var 
+```
+
+
+```{}
+docker exec -ti test bash
+
+cd /home/rstudio/sc-rna-seq-snap
+Rscript -e "rmarkdown::render(‘my-amazing-script.Rmd', clean = TRUE)"
 ```
 
 Your image is now available for everyone to use! 😀
@@ -139,7 +155,7 @@ Then, use the docker push command to upload your image to the registry: `docker 
 
 Example:
 ```{}
-docker push svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest
+docker push svlprhpcreg01.stjude.org/hpcf/sc-rna-seq-snap:latest
 ```
 
 
@@ -152,14 +168,14 @@ This can be before/after/regardless pushing the Docker image to a registry.
 
 Example:
 ```{}
-cd /Users/achroni/single-cell-rna-analysis
+cd /Users/my_username/sc-rna-seq-snap
 ```
 
 (2) Then you can run the docker and create your docker container. The docker container can be unique and new one every time you run/execute a new set of analyses, e.g. name it here as `review`: `docker run --platform linux/amd64 --name review -d -e PASSWORD=ANYTHING -p 8787:8787 -v $PWD:/home/rstudio/my_favorite_repo <registry>/<namespace>/my_favorite_repo:latest` and `docker container start review`.
 
 Example:
 ```{}
-docker run --platform linux/amd64 --name review -d -e PASSWORD=ANYTHING -p 8787:8787 -v $PWD:/home/rstudio/single-cell-rna-analysis svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest
+docker run --platform linux/amd64 --name review -d -e PASSWORD=ANYTHING -p 8787:8787 -v $PWD:/home/rstudio/sc-rna-seq-snap svlprhpcreg01.stjude.org/hpcf/sc-rna-seq-snap:latest
 docker container start review
 ```
 
@@ -172,7 +188,7 @@ Example:
 ```{}
 docker exec -ti review bash
 
-cd /home/rstudio/single-cell-rna-analysis
+cd /home/rstudio/sc-rna-seq-snap
 Rscript -e "rmarkdown::render(‘my-amazing-script.Rmd', clean = TRUE)"
 ```
 

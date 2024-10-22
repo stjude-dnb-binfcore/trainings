@@ -43,7 +43,7 @@ Containers are typically used to run noninteractive (batch) executables on gener
 ```{}
 singularity run single-cell-rna-analysis:latest.sif
 
-singularity exec -B $PWD:/research/dept/dnb/core_operations/Bioinformatics/achroni/GitHub/single-cell-rna-analysis docker://achronistjude/single-cell-rna-analysis:latest bash
+singularity exec -B $PWD:./GitHub/single-cell-rna-analysis docker://achronistjude/single-cell-rna-analysis:latest bash
 ```
 
 Singularity will run and take more time to convert the first time. After this, the converted sif file will live in the home cash dir of the user. The user will still need to repeat these commands, but it will take less time to run/exec as the `run` part has been complete already. 
@@ -52,7 +52,7 @@ Singularity will run and take more time to convert the first time. After this, t
 Now you can go to your analyses directory and run your module(s).
 
 ```{}
-cd /research/dept/dnb/core_operations/Bioinformatics/achroni/GitHub/single-cell-rna-analysis
+cd ./GitHub/single-cell-rna-analysis
 Rscript -e "rmarkdown::render(‘my-amazing-script.Rmd', clean = TRUE)"
 ```
 

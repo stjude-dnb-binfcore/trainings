@@ -29,7 +29,7 @@ Antonia Chroni, PhD ([@AntoniaChroni](https://github.com/AntoniaChroni))
 
 ## Contact
 
-Contributions, issues, and feature requests are welcome! Please feel free to check [issues](https://github.com/stjudeDNBBinfCore/Trainings/issues).
+Contributions, issues, and feature requests are welcome! Please feel free to check [issues](https://github.com/stjudednbbinfCore/trainings/issues).
 
 ---
 

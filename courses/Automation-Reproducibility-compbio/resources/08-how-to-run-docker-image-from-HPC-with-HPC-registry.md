@@ -27,7 +27,7 @@ Use the following command: `singularity registry login --username <username> doc
 
 Example
 ```{}
-singularity registry login --username achroni docker://svlprhpcreg01.stjude.org 
+singularity registry login --username my_username docker://svlprhpcreg01.stjude.org 
 ```
 # ###################################
 
@@ -39,7 +39,7 @@ Use the following command: `singularity run docker://svlprhpcreg01.stjude.org/hp
 
 Example
 ```{}
-singularity run docker://svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest
+singularity run docker://svlprhpcreg01.stjude.org/hpcf/sc-rna-seq-snap:latest
 ```
 
 ## Build sif file
@@ -52,7 +52,7 @@ Build local sif file from docker image and run from local file: `singularity bui
 
 Example
 ```{}
-singularity build single-cell-rna-analysis:latest.sif docker://svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest
+singularity build sc-rna-seq-snap:latest.sif docker://svlprhpcreg01.stjude.org/hpcf/sc-rna-seq-snap:latest
 ```
 # ###################################
 
@@ -61,11 +61,11 @@ Containers are typically used to run noninteractive (batch) executables on gener
 `singularity run` executes a default command defined in the container image.
 
 ```{}
-singularity run single-cell-rna-analysis:latest.sif
-singularity exec -B $PWD:/research/dept/dnb/core_operations/Bioinformatics/achroni/GitHub/single-cell-rna-analysis docker://svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest bash
+singularity run sc-rna-seq-snap:latest.sif
+singularity exec -B $PWD:./GitHub/sc-rna-seq-snap docker://svlprhpcreg01.stjude.org/hpcf/sc-rna-seq-snap:latest bash
 
 
-cd /research/dept/dnb/core_operations/Bioinformatics/achroni/GitHub/single-cell-rna-analysis
+cd ./GitHub/sc-rna-seq-snap
 run my script
 ```
 
@@ -81,17 +81,9 @@ run my script
 Using the following commands: `singularity build –fakeroot <container_name_tag>.sif <container_name>.def` and `singularity push oras://<url to registry>/<container_name_tag>.sif`
 
 ```{}
-singularity build –fakeroot single-cell-rna-analysis:latest.sif single-cell-rna-analysis.def
-singularity push oras://<url to docker://svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest.sif
+singularity build –fakeroot sc-rna-seq-snap:latest.sif sc-rna-seq-snap.def
+singularity push oras://<url to docker://svlprhpcreg01.stjude.org/hpcf/sc-rna-seq-snap:latest.sif
 ```
-
-
-
-
-
-
-
-
 
 
 
@@ -163,7 +155,7 @@ Use the following command: `singularity registry login --username <username> doc
 
 Example
 ```{}
-singularity registry login --username achroni docker://svlprhpcreg01.stjude.org 
+singularity registry login --username my_username docker://svlprhpcreg01.stjude.org 
 ```
 
 ## Run from docker image (converts to SIF and stores in ~/.singularity)
@@ -172,7 +164,7 @@ Use the following command: `singularity run docker://svlprhpcreg01.stjude.org/hp
 
 Example
 ```{}
-singularity run docker://svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest
+singularity run docker://svlprhpcreg01.stjude.org/hpcf/sc-rna-seq-snap:latest
 ```
 
 ## Build sif file
@@ -183,14 +175,14 @@ Build local sif file from docker image and run from local file: `singularity bui
 
 Example
 ```{}
-singularity build single-cell-rna-analysis:latest.sif docker://svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest
+singularity build sc-rna-seq-snap:latest.sif docker://svlprhpcreg01.stjude.org/hpcf/sc-rna-seq-snap:latest
 ```
 
 Containers are typically used to run noninteractive (batch) executables on generic resources like the cloud. (i.e. submit and wait for result)
 `singularity run` executes a default command defined in the container image.
 
 ```{}
-singularity run single-cell-rna-analysis:latest.sif
+singularity run sc-rna-seq-snap:latest.sif
 ```
 
 
@@ -198,8 +190,8 @@ singularity run single-cell-rna-analysis:latest.sif
 Using the following commands: `singularity build –fakeroot <container_name_tag>.sif <container_name>.def` and `singularity push oras://<url to registry>/<container_name_tag>.sif`
 
 ```{}
-singularity build –fakeroot single-cell-rna-analysis:latest.sif single-cell-rna-analysis.def
-singularity push oras://<url to docker://svlprhpcreg01.stjude.org/hpcf/single-cell-rna-analysis:latest.sif
+singularity build –fakeroot sc-rna-seq-snap:latest.sif sc-rna-seq-snap.def
+singularity push oras://<url to docker://svlprhpcreg01.stjude.org/hpcf/sc-rna-seq-snap:latest.sif
 ```
 
 

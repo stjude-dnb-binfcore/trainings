@@ -9,5 +9,5 @@
 
 (2) Sign in/Login in both apps.
 
-(3) Play around by cloning/adding a repository, e.g., [epigenomic-profiling-analysis](https://github.com/stjudeDNBBinfCore/epigenomic-profiling-analysis)
+(3) Play around by cloning/adding a repository, e.g., [epigenomic-profiling-analysis](https://github.com/stjude-dnb-binfcore/epigenomic-profiling-analysis)
 

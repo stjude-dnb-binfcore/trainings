@@ -6,7 +6,7 @@ suppressPackageStartupMessages({
   library(yaml)})
 ##################################### 
 # Set up directories and paths to root_dir and analysis_dir
-root_dir <- file.path("/research/dept/dnb/core_operations/Bioinformatics/achroni/GitHub/trainings")
+root_dir <- file.path("./GitHub/trainings")
 demo_dir <- file.path(root_dir, "courses", "Automation-Reproducibility-compbio", "demo")
 analysis_dir <- file.path(demo_dir, "analyses", "data-exploratory-analysis")
 report_dir <- file.path(analysis_dir, "plots") 
