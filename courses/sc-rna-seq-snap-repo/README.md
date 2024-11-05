@@ -1,6 +1,6 @@
 <div align="center">
+<a href='https://github.com/stjude-dnb-binfcore/trainings/'><img src="figures/img/ScRNASeqSnap_logo.png" height="350px"/></a>
 
- <img src="figures/img/ScRNASeqSnap_logo.png" alt="ScRNASeqSnap repository logo" width="350px" />
 <br />
 <!-- badges: start -->
 <a href="https://opensource.org/license/bsd-2-clause/"><img src="https://img.shields.io/badge/open-source-logo.png" alt="License: BSD 2-Clause License" /></a>
