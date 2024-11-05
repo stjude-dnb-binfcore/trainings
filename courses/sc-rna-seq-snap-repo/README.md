@@ -1,13 +1,12 @@
 <div align="center">
 
-<a href='https://github.com/stjude-dnb-binfcore/trainings/'><img src="figures/img/DNB-BINF-Core-logo.png" height="350px" /></a>
-
+ <img src="figures/img/ScRNASeqSnap_logo.png" alt="ScRNASeqSnap repository logo" width="350px" />
 <br />
 <!-- badges: start -->
 <a href="https://opensource.org/license/bsd-2-clause/"><img src="https://img.shields.io/badge/open-source-logo.png" alt="License: BSD 2-Clause License" /></a>
 <a href="https://www.repostatus.org/#active"><img src="https://www.repostatus.org/badges/latest/active.svg" alt="The project has reached a stable, usable state and is being actively developed." /></a>
 <a href="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/graphs/traffic"><img src="https://img.shields.io/badge/traffic" alt="Monthly Downloads" /></a>
-<a href="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/forks"><img src="https://img.shields.io/badge//forks" /></a>
+<a href="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/forks"><img src="https://img.shields.io/badge//forks" alt="Total Forks" /></a>
 <!-- badges: end -->
 
 <br />
