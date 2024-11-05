@@ -1,9 +1,20 @@
-<p align="center">
-  <img src="figures/img/ScRNASeqSnap_logo.png" alt="snap-logo" width="560px" />
-</p>
-<p align="center">
-  <a href="https://github.com/stjude-dnb-binfcore/trainings/blob/main/LICENSE"><img src="https://img.shields.io/github/license/stjude-dnb-binfcore/kf-template-repo.svg?style=for-the-badge"></a>
-</p>
+<div align="center">
+
+<a href='https://github.com/stjude-dnb-binfcore/trainings/'><img src="figures/img/ScRNASeqSnap_logo.png" height="350px"/></a>
+
+<br />
+<!-- badges: start -->
+<a href="https://github.com/stjude-dnb-binfcore/trainings/blob/main/LICENSE/"><img alt="License: BSD 2-Clause License" /></a>
+
+<a href="https://www.repostatus.org/#active"><img src="https://www.repostatus.org/badges/latest/active.svg" alt="The project has reached a stable, usable state and is being actively developed." /></a>
+<a <img src="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/graphs/traffic&show_icons=true&theme=dracula" alt="Monthly Downloads"></a>
+<a <img src="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/forks" alt="Total Forks"></a>
+<!-- badges: end -->
+
+<a href="https://www.contributor-covenant.org/version/2/1/code_of_conduct.html"><img src="https://img.shields.io/badge/Contributor%20Covenant-v2.1%20adopted-ff69b4.svg" alt="Contributor Covenant" /></a>
+<br />
+</div>
+
 
 
 
