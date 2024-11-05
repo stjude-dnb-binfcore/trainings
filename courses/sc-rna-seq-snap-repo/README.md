@@ -1,6 +1,6 @@
 <div align="center">
 
-<a <a href='https://github.com/stjude-dnb-binfcore/trainings/blob/main/'><img src="figures/img/ScRNASeqSnap_logo.png" height="350px"/></a>
+<a <a href='https://github.com/stjude-dnb-binfcore/trainings/blob/main/'><img src="figures/img/DNB-BINF-Core-logo.png" height="350px"/></a>
 
 <br />
 <!-- badges: start -->
@@ -10,7 +10,6 @@
 <a href="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/forks"><img src="https://img.shields.io/badge//forks" alt="Total Forks"></a>
 <!-- badges: end -->
 
-<a href="https://www.contributor-covenant.org/version/1/1/code_of_conduct.html"><img src="https://img.shields.io/badge/Contributor%10Covenant-v1.1%10adopted-ff69b4.svg" alt="Contributor Covenant" /></a>
 <br />
 </div>
 
