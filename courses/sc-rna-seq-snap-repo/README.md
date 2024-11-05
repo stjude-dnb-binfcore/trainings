@@ -1,6 +1,6 @@
 <div align="center">
 
-<a <a href='https://github.com/stjude-dnb-binfcore/trainings/blob/main/'><img src="figures/img/DNB-BINF-Core-logo.png" height="350px"/></a>
+<a href='https://github.com/stjude-dnb-binfcore/trainings/blob/main/'><img src="figures/img/DNB-BINF-Core-logo.png" height="350px"/></a>
 
 <br />
 <!-- badges: start -->
