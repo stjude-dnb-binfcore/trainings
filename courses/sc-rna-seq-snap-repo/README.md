@@ -24,17 +24,14 @@ In this workshop, we will discuss tools, methods, and reports (including results
 
 | Audience | Computational Skills | Prerequisites | Duration |
 :----------|:----------|:----------|:----------|
-| Biologists/Bioinformaticians | Beginner/Intermediate | Shell basics | 1.5h|
+| Biologists/Bioinformaticians | Beginner/Intermediate | Shell basics | 1 h|
 
 
 ## Learning Objectives
 
 1. Overview of Tools and Methods in the Repo
 2. Best Practices for automation and reproducibility: (a) documentation and usability, (b) automation, and (c) containers
-3. Code review and testing methods
-4. Reviewing Results, Plots, and Reports
-5. Addressing Common Pitfalls and Q&A
-
+3. Reviewing Results, Plots, and Reports
 
 
 ## Target Audience
