@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="figures/img/DNB-BINF-Core-logo.png" alt="DNB-BINF-Core-logo logo" width="560px" />
+  <img src="figures/img/ScRNASeqSnap_logo.png" alt="snap-logo" width="560px" />
 </p>
 <p align="center">
   <a href="https://github.com/stjude-dnb-binfcore/trainings/blob/main/LICENSE"><img src="https://img.shields.io/github/license/stjude-dnb-binfcore/kf-template-repo.svg?style=for-the-badge"></a>
