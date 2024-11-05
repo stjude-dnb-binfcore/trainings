@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href='https://github.com/stjude-dnb-binfcore/trainings/'><img src="figures/img/ScRNASeqSnap_logo.png" height="350px"/></a>
+<a <img src="figures/img/ScRNASeqSnap_logo.png" alt="ScRNASeqSnap repository logo" height="350px"/></a>
 
 <br />
 <!-- badges: start -->
@@ -16,7 +16,8 @@
 </div>
 
 
-
+<p align="center">
+  <img src="figures/img/ScRNASeqSnap_logo.png" alt="ScRNASeqSnap repository logo" width="560px" />
 
 # Single cell RNA Seq Snap workflow (ScRNASeqSnap) Workshop
 
