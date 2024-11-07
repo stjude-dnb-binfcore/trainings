@@ -1,6 +1,5 @@
-<p align="center">
+<div align="center">
   <img src="figures/img/ScRNASeqSnap_logo.png" alt="ScRNASeqSnap repository logo" width="560px" />
-</p>
 
 <br />
 <!-- badges: start -->
@@ -10,7 +9,6 @@
 
 <br />
 </div>
-
 
 
 # Single cell RNA Seq Snap workflow (ScRNASeqSnap) Workshop
