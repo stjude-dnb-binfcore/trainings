@@ -43,10 +43,6 @@ The course is intended for cancer informatics tool developers, particularly thos
 * [sc-rna-seq-snap-repo-2024-12](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-rna-seq-snap-repo/lectures/sc-rna-seq-snap-repo-2024-12.pdf)
 
 
-## Access to the workshop recording 🚧 🚧 🚧
-
-St. Jude employees can have access to the [recording from the workshop]().
-
 
 > Pre-requisite: Introduction to Shell and GitHub
 
