@@ -1,14 +1,10 @@
-<div align="center">
-  <img src="figures/img/ScRNASeqSnap_logo.png" alt="ScRNASeqSnap repository logo" width="560px" />
+<p align="center">
+  <img src="img/ScRNASeqSnap_logo.png" alt="ScRNASeqSnap repository logo" width="560px" />
+</p>
+<p align="center">
+  <a href="https://www.repostatus.org/#active"><img src="https://www.repostatus.org/badges/latest/active.svg?style=for-the-badge" alt="The project has reached a stable, usable state and is being actively developed." /></a>
 
-<br />
-<!-- badges: start -->
-<a href="https://opensource.org/license/bsd-2-clause/"><img src="https://img.shields.io/badge/open-source-logo.png" alt="License: BSD 2-Clause License" /></a>
-<a href="https://www.repostatus.org/#active"><img src="https://www.repostatus.org/badges/latest/active.svg" alt="The project has reached a stable, usable state and is being actively developed." /></a>
-<!-- badges: end -->
-
-<br />
-</div>
+</p>
 
 
 # Single cell RNA Seq Snap workflow (ScRNASeqSnap) Workshop
@@ -45,6 +41,8 @@ The course is intended for wet lab biologists that are interested in exploring t
 ## Below is the main directory structure listing the analyses and data files used in this repository
 
 ```
+├── img
+|   └── ScRNASeqSnap_logo.png
 ├── lectures
 ├── resources
 └── README.md
