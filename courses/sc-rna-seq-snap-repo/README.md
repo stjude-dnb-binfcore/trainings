@@ -41,6 +41,8 @@ The course is intended for wet lab biologists that are interested in exploring t
 ## Below is the main directory structure listing the analyses and data files used in this repository
 
 ```
+├── img
+|   └── ScRNASeqSnap_logo.png
 ├── lectures
 ├── resources
 └── README.md
