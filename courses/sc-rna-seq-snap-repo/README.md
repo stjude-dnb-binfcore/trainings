@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="figures/img/ScRNASeqSnap_logo.png" alt="ScRNASeqSnap repository logo" width="560px" />
+  <a href="https://github.com/stjude-dnb-binfcore/trainings/blob/main/"><img src="figures/img/ScRNASeqSnap_logo.png" alt="ScRNASeqSnap repository logo" width="560px" />
+
 
 <br />
 <!-- badges: start -->
