@@ -46,11 +46,7 @@ The course is intended for wet lab biologists that are interested in exploring t
 
 ```
 ├── lectures
-|   ├── sc-rna-seq-snap-repo-2024-12.pdf
-|   └── sc-rna-seq-snap-repo-2024-12.pptx
 ├── resources
-|   ├── ...
-|   └── ...
 └── README.md
 ```
 
