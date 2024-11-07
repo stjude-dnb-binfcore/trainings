@@ -1,5 +1,5 @@
 <div align="center">
-  <a <img src="https://github.com/stjude-dnb-binfcore/trainings/blob/main/figures/img/ScRNASeqSnap_logo.png" alt="ScRNASeqSnap repository logo" width="560px" />
+  <a href="https://github.com/stjude-dnb-binfcore/trainings/blob/main/figures/img/"><img src="ScRNASeqSnap_logo.png" alt="ScRNASeqSnap repository logo" width="560px" />
 
 
 <br />
