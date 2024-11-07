@@ -5,8 +5,6 @@
 <!-- badges: start -->
 <a href="https://opensource.org/license/bsd-2-clause/"><img src="https://img.shields.io/badge/open-source-logo.png" alt="License: BSD 2-Clause License" /></a>
 <a href="https://www.repostatus.org/#active"><img src="https://www.repostatus.org/badges/latest/active.svg" alt="The project has reached a stable, usable state and is being actively developed." /></a>
-<a href="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/graphs/traffic"><img src="https://img.shields.io/badge/traffic" alt="Monthly Downloads" /></a>
-<a href="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/forks"><img src="https://img.shields.io/badge//forks" alt="Total Forks" /></a>
 <!-- badges: end -->
 
 <br />
@@ -40,7 +38,7 @@ The course is intended for wet lab biologists that are interested in exploring t
 > These materials were developed for a trainer-led workshop, but are also amenable to self-guided learning.
 
 ## Lessons and Materials 🚧 🚧 🚧
-* [sc-rna-seq-snap-repo-2024-12](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-rna-seq-snap-repo/lectures/sc-rna-seq-snap-repo-2024-12.pdf)
+* sc-rna-seq-snap-repo-2024-12
 * `./resources`: supplemental materials and learning resources 
 * `./lectures`: slides covering the `Learning Objectives`.
 
