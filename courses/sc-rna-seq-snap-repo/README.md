@@ -1,5 +1,6 @@
-<div align="center">
-<a href='https://github.com/stjude-dnb-binfcore/trainings/'><img src="figures/img/ScRNASeqSnap_logo.png" height="350px"/></a>
+<p align="center">
+  <img src="figures/img/ScRNASeqSnap_logo.png" alt="ScRNASeqSnap repository logo" width="560px" />
+</p>
 
 <br />
 <!-- badges: start -->
