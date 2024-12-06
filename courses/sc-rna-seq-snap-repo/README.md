@@ -17,7 +17,7 @@ In this workshop, we will discuss how to navigate the analysis modules and explo
 
 | Audience | Computational Skills | Prerequisites | Duration |
 :----------|:----------|:----------|:----------|
-| Biologists | Beginner | None | 1 h|
+| Biologists/Bioinformaticians | Beginner | None | 1 h|
 
 
 ## Learning Objectives
