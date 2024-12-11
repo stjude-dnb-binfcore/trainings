@@ -1,4 +1,8 @@
-![DNB-BINF-Core-logo](https://github.com/stjudeDNBBinfCore/Trainings/tree/564aceb2087aa68333534effdf7187098bf28fe0/figures/img/DNB-BINF-Core-logo.png)
+<p align="center">
+  <img src="img/DNB-BINF-Core-logo.png" alt="DNB-BINF-Core logo" width="560px" />
+</p>
+
+
 
 # Intro to RNA-Seq (CAB Results) Workshop
 

@@ -17,7 +17,7 @@ In this workshop, we will discuss how to navigate the analysis modules and explo
 
 | Audience | Computational Skills | Prerequisites | Duration |
 :----------|:----------|:----------|:----------|
-| Biologists | Beginner | None | 1 h|
+| Biologists/Bioinformaticians | Beginner | None | 1 h|
 
 
 ## Learning Objectives
@@ -32,10 +32,9 @@ The course is intended for wet lab biologists that are interested in exploring t
 
 > These materials were developed for a trainer-led workshop, but are also amenable to self-guided learning.
 
-## Lessons and Materials 🚧 🚧 🚧
-* sc-rna-seq-snap-repo-2024-12
+## Lessons and Materials 
 * `./resources`: supplemental materials and learning resources 
-* `./lectures`: slides covering the `Learning Objectives`.
+* `./lectures`: slides covering the `Learning Objectives`: [sc-rna-seq-snap-repo-2024-12-10](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-rna-seq-snap-repo/lectures/sc-rna-seq-snap-repo-2024-12-10.pdf)
 
  
 ## Below is the main directory structure listing the analyses and data files used in this repository
@@ -44,7 +43,9 @@ The course is intended for wet lab biologists that are interested in exploring t
 ├── img
 |   └── ScRNASeqSnap_logo.png
 ├── lectures
+|   └── sc-rna-seq-snap-repo-2024-12-10.pdf
 ├── resources
+|   └── links-to-resources.md
 └── README.md
 ```
 
