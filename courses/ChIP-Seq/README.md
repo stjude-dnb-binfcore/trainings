@@ -37,7 +37,7 @@ Sharon Freshour, PhD ([@sharonfreshour](https://github.com/sharonfreshour))
 
 ## Contact
 
-Contributions, issues, and feature requests are welcome! Please feel free to check [issues](https://github.com/stjudeDNBBinfCore/Trainings/issues).
+Contributions, issues, and feature requests are welcome! Please feel free to check [issues](https://github.com/stjude-dnb-binfcore/trainings/issues).
 
 ---
 
