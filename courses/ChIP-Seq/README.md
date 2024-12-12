@@ -26,7 +26,7 @@ St. Jude employees can access a [recording from the workshop](https://sjcrh-my.s
 
 ```
 ├── lectures
-|   ├── StJude-Introduction-to-ChIP-Sequencing-and-QC-2024-12-11.pdf
+|   ├── Introduction-to-ChIP-Sequencing-and-QC-2024-12-11.pdf
 └── README.md
 ```
 
