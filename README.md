@@ -35,13 +35,6 @@ cd $(dirname "${BASH_SOURCE[0]}")/Trainings/courses/<course_of_interest>
 ├── LICENSE
 ├── README.md
 └── SECURITY.md
-├── figures
-|  ├── barcodes
-|  ├── gitignore.txt
-|  └── img
-├── gitignore.txt
-├── LICENSE
-└── README.md
 ```
 
 ## Contact
