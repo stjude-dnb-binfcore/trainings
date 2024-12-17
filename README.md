@@ -24,14 +24,17 @@ cd $(dirname "${BASH_SOURCE[0]}")/Trainings/courses/<course_of_interest>
 ├── courses
 |  ├── Automation-Reproducibility-compbio
 |  ├── Bulk-RNA-Seq
-|  └── sc-RNA-Seq
+|  ├── ChIP-Seq
+|  ├── sc-RNA-Seq
+|  └── sc-rna-seq-snap-repo
 ├── figures
 |  ├── barcodes
 |  ├── gitignore.txt
 |  └── img
 ├── gitignore.txt
 ├── LICENSE
-└── README.md
+├── README.md
+└── SECURITY.md
 ```
 
 ## Contact
