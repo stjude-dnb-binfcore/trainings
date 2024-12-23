@@ -64,21 +64,21 @@ data and is required by most data repositories.
     > - Res_0.1_Markers_top_10_Heatmap.png
 
 - Always ask yourself:
-    > - Which files do you want to look for before a deadline?
-    > - Which files do you want to get from your collaborator?
+    - Which files do you want to look for before a deadline?
+    - Which files do you want to get from your collaborator?
 
 ### Files you didn’t create
 
 - All the guidelines and suggestions for file names are great for your files, but sometimes files come from other sources
-    > - If you are lucky, they will follow nice conventions! 🎉
-    > - but often they won’t 🫤
+    - If you are lucky, they will follow nice conventions! 🎉
+    - but often they won’t 🫤
 - To rename or not to rename, that is the question
-    > - Leaving the name as it was sent can make it easier to track in correspondence
-    > - Reasons to rename:
-        > - uniformative generic names: data.txt
-        > - add source or date information
-        > - converting spaces or other special characters (but try to write code that can handle these!)
-    > - If you choose to rename, do it with a script and document the original name and source.
+    - Leaving the name as it was sent can make it easier to track in correspondence
+    - Reasons to rename:
+       - uniformative generic names: data.txt
+       - add source or date information
+       - converting spaces or other special characters (but try to write code that can handle these!)
+    - If you choose to rename, do it with a script and document the original name and source.
 
 
 ## File format
