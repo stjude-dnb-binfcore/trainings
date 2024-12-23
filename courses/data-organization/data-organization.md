@@ -35,45 +35,51 @@ data and is required by most data repositories.
 
 ### Machine friendly
 
-Avoid spaces
-• Old computer systems get confused by spaces
-• All computer systems are old underneath
-• Use underscores or dashes to separate words instead
-• Use “standard” characters:
-• Letters, numbers, underscores, and dashes
-• Periods only for file extensions (.txt, .tsv, .R, .tar.gz)
-• Many characters have special meanings in code. Avoid them! (e.g. * + ? | $ / “ )
-• Be consistent with case
-• Don’t assume case has meaning: on some systems it does, and on some it doesn’t
-• But always act as if it does!
-• Never have two files that are the same but for case
+- Avoid spaces!
+  - Old computer systems get confused by spaces
+  - All computer systems are old underneath
+  - Use underscores or dashes to separate words instead
+
+- Use “standard” characters:
+  - Letters, numbers, underscores, and dashes
+  - Periods only for file extensions (.txt, .tsv, .R, .tar.gz)
+  - Many characters have special meanings in code. Avoid them! (e.g. * + ? | $ / “ )
+
+- Be consistent with case
+  - Don’t assume case has meaning: on some systems it does, and on some it doesn’t
+  - But always act as if it does!
+    - Never have two files that are the same but for case
 
 
 ### Human friendly
 
-Names should contain information about file content
-• Short names are tempting, but you may regret choosing them!
-• 01.R
-• data.txt
-• tests.py
-• Use long descriptive names
-• 01_download-mouse-data.sh
-• Res_0.1_Markers_top_10_Heatmap.png
-• Which files do you want to look for before a deadline?
-• Which files do you want to get from your collaborator?
+- Names should contain information about file content
+- Short names are tempting, but you may regret choosing them!
+    > - 01.R
+    > - data.txt
+    > - tests.py
+
+- Use long descriptive names
+    > - 01_download-mouse-data.sh
+    > - Res_0.1_Markers_top_10_Heatmap.png
+
+- Always ask yourself:
+    > - Which files do you want to look for before a deadline?
+    > - Which files do you want to get from your collaborator?
 
 ### Files you didn’t create
 
-All the guidelines and suggestions for file names are great for your files, but sometimes files come from other sources
-• If you are lucky, they will follow nice conventions! 🎉
-• but often they won’t 🫤
-• To rename or not to rename, that is the question
-• Leaving the name as it was sent can make it easier to track in correspondence
-• Reasons to rename:
-• uniformative generic names: data.txt
-• add source or date information
-• converting spaces or other special characters (but try to write code that can handle these!)
-• If you choose to rename, do it with a script and document the original name and source.
+- All the guidelines and suggestions for file names are great for your files, but sometimes files come from other sources
+    > - If you are lucky, they will follow nice conventions! 🎉
+    > - but often they won’t 🫤
+- To rename or not to rename, that is the question
+    > - Leaving the name as it was sent can make it easier to track in correspondence
+    > - Reasons to rename:
+        > - uniformative generic names: data.txt
+        > - add source or date information
+        > - converting spaces or other special characters (but try to write code that can handle these!)
+    > - If you choose to rename, do it with a script and document the original name and source.
+
 
 ## File format
 
