@@ -7,17 +7,15 @@ For the visualization portion of the workshop, we utilize the [Honnell et al., 2
 
 ## Technical tips and tricks about data organization
 
-• Leave the raw data raw - do not change it!
-• Put each observation or sample in its own row in datasets/cohorts.
-• Put all your variables in columns - the thing that vary between samples, like ‘strain’ or ‘DNA-concentration’.
-• Have column names be explanatory, but without spaces. Use ‘-’, ‘_’ or camel case instead of a space. For instance ‘library-prepmethod’
+- Leave the raw data raw - do not change it!
+- Put each observation or sample in its own row in datasets/cohorts.
+- Put all your variables in columns - the thing that vary between samples, like ‘strain’ or ‘DNA-concentration’.
+- Have column names be explanatory, but without spaces. Use ‘-’, ‘_’ or camel case instead of a space. For instance ‘library-prepmethod’
 or ‘LibraryPrep’is better than ’library preparation method’ or ‘prep’, because computers interpret spaces in particular ways.
-• Do not combine multiple pieces of information in one cell. Sometimes it just seems like one thing, but think if that’s the only way
+- Do not combine multiple pieces of information in one cell. Sometimes it just seems like one thing, but think if that’s the only way
 you’ll want to be able to use or sort that data. For example, instead of having a column with species and strain name (e.g. E. coli
 K12) you would have one column with the species name (E. coli) and another with the strain name (K12). Depending on the type of
 analysis you want to do, you may even separate the genus and species names into distinct columns.
-• Export the cleaned data to a text-based format like CSV (comma-separated values) format. This ensures that anyone can use the
-data and is required by most data repositories.
 
 
 ## Naming of [Files]
@@ -83,8 +81,8 @@ data and is required by most data repositories.
 
 ## File format
 
-
-
+- Export the cleaned data to a text-based format like CSV (comma-separated values) format. This ensures that anyone can use the
+data and is required by most data repositories.
 
 
 ## Below is the main directory structure 
@@ -97,10 +95,12 @@ data and is required by most data repositories.
 
 
 ### Supplemental materials and learning resources
-* Regarding Data tidiness and data wrangling for NGS projects, please see [Project Organization and Management for Genomics](https://datacarpentry.org/organization-genomics/)
-Source (edited) by Data Lab Reproducibility Workshop
+* Material by the [Automation and Reproducibility in Computational Biology course](https://github.com/stjude-dnb-binfcore/trainings/tree/add-wiki-documentation/courses/Automation-Reproducibility-compbio) and by [Data Lab Reproducibility Workshop](https://alexslemonade.github.io/reproducible-research/workshop-schedule.html) (edited).
 
-## Course Authors
+* Regarding Data tidiness and data wrangling for NGS projects, please see [Project Organization and Management for Genomics](https://datacarpentry.org/organization-genomics/)
+
+
+## Authors
 
 Antonia Chroni, PhD ([@AntoniaChroni](https://github.com/AntoniaChroni))
 
