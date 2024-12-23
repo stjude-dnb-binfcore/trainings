@@ -1,11 +1,11 @@
-# Data organization and file format
+# Data organization, file naming, and file format
 
-The `Intro to sc/snRNA-seq and Advanced visualization with R Shiny` provides an introduction to QC of raw sc/snRNA-seq data, QC of sc/snRNA-seq alignment data, and cell-leveling filtering of sc/snRNA-seq data. Additionally, this course demonstrates how R Shiny applications can be utilized to explore sc/snRNA-seq data and produce figures for sc/snRNA-seq analysis.
- 
- 
-For the visualization portion of the workshop, we utilize the [Honnell et al., 2022](https://doi.org/10.1038/s41467-021-27924-y) cohort displayed in the [R Shiny app](https://vsx2-deletion.stjude.org/).
+The current documentation provides the systematic approach for storing, labeling, and structuring digital files to ensure easy access, management, and compatibility by our team at the [Bioinformatics Core at the Department of Neurobiology at the St. Jude Children's Research Hospital](https://www.stjude.org/research/departments/developmental-neurobiology/shared-resources/bioinformatic-core.html). Together, the practices suggested here enhance productivity, reduce errors, and support smooth collaboration and data integrity.
 
-## Technical tips and tricks about data organization
+
+## Data Organization
+
+Data Organization involves categorizing and arranging files logically (e.g., by project, date, or type) for efficient retrieval. Some technical tips and tricks about data organization:
 
 - Leave the raw data raw - do not change it!
 - Put each observation or sample in its own row in datasets/cohorts.
@@ -19,6 +19,8 @@ analysis you want to do, you may even separate the genus and species names into 
 
 
 ## Naming of [Files]
+
+File Naming follows conventions that make files easily identifiable, typically including relevant keywords, version numbers, and dates.
 
 - Some “good” file names:
     > - Res_0.1_Markers_all.tsv
@@ -76,12 +78,14 @@ analysis you want to do, you may even separate the genus and species names into 
        - uniformative generic names: data.txt
        - add source or date information
        - converting spaces or other special characters (but try to write code that can handle these!)
-    - If you choose to rename, do it with a script and document the original name and source.
+    - If you choose to rename, do it with a script and document the original name and source. Or we will take care of this for you!
 
 
-## File format
+## File Format
 
-- Export the cleaned data to a text-based format like CSV (comma-separated values) format. This ensures that anyone can use the
+File Format defines the structure of a file (e.g., .csv, .txt, .jpg), ensuring it is compatible with the required software and use cases.
+
+  - Export the cleaned data to a text-based format like CSV (comma-separated values) format. This ensures that anyone can use the
 data and is required by most data repositories.
 
 
@@ -95,7 +99,7 @@ data and is required by most data repositories.
 
 
 ### Supplemental materials and learning resources
-* Material by the [Automation and Reproducibility in Computational Biology course](https://github.com/stjude-dnb-binfcore/trainings/tree/add-wiki-documentation/courses/Automation-Reproducibility-compbio) and by [Data Lab Reproducibility Workshop](https://alexslemonade.github.io/reproducible-research/workshop-schedule.html) (edited).
+* Material by the [Automation and Reproducibility in Computational Biology course](https://github.com/stjude-dnb-binfcore/trainings/tree/add-wiki-documentation/courses/Automation-Reproducibility-compbio) and [Data Lab Reproducibility Workshop](https://alexslemonade.github.io/reproducible-research/workshop-schedule.html) (edited).
 
 * Regarding Data tidiness and data wrangling for NGS projects, please see [Project Organization and Management for Genomics](https://datacarpentry.org/organization-genomics/)
 
