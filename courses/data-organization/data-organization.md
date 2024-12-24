@@ -43,9 +43,34 @@ File Naming follows conventions that make files easily identifiable, typically i
 - Use “standard” characters:
   - Letters, numbers, underscores, and dashes
   - Periods only for file extensions (.txt, .tsv, .R, .tar.gz)
-  - Many characters have special meanings in code. Avoid them! (e.g. * + ? | $ / “ )
+  - Many characters have special meanings in code. Avoid them!
+      - Do not use any of these common illegal characters or symbols in your file names or folders.
+        - £ pound
+        - % percent
+        - & ampersand
+        - { left curly bracket
+        - } right curly bracket
+        - \ back slash
+        - < left angle bracket
+        - > right angle bracket
+        - * asterisk
+        - ? question mark
+        - / forward slash
+        - blank spaces
+        - $ dollar sign
+        - ! exclamation point
+        - ' single quotes
+        - " double quotes
+        - : colon
+        - @ at sign
+        - plus sign
+        - ` backtick
+        - | pipe
+        - = equal sign
+        - emojis
+        - alt codes
 
-- Be consistent with case
+- Be consistent with case.
   - Don’t assume case has meaning: on some systems it does, and on some it doesn’t
   - But always act as if it does!
     - Never have two files that are the same but for case
