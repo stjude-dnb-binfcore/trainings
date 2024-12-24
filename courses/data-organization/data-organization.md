@@ -36,9 +36,9 @@ File Naming follows conventions that make files easily identifiable, typically i
 ### Machine friendly
 
 - Avoid spaces!
-  - Old computer systems get confused by spaces
-  - All computer systems are old underneath
-  - Use underscores or dashes to separate words instead
+  - Old computer systems get confused by spaces.
+  - All computer systems are old underneath.
+  - Use underscores or dashes to separate words instead.
 
 - Use “standard” characters:
   - Letters, numbers, underscores, and dashes
@@ -71,14 +71,14 @@ File Naming follows conventions that make files easily identifiable, typically i
        - alt codes
 
 - Be consistent with case.
-  - Don’t assume case has meaning: on some systems it does, and on some it doesn’t
+  - Don’t assume case has meaning: on some systems it does, and on some it doesn’t.
   - But always act as if it does!
-    - Never have two files that are the same but for case
+    - Never have two files that are the same but for case.
 
 
 ### Human friendly
 
-- Names should contain information about file content
+- Names should contain information about file content.
 - Short names are tempting, but you may regret choosing them!
     > - 01.R
     > - data.txt
@@ -94,16 +94,16 @@ File Naming follows conventions that make files easily identifiable, typically i
 
 ### Files you didn’t create
 
-- All the guidelines and suggestions for file names are great for your files, but sometimes files come from other sources
+- All the guidelines and suggestions for file names are great for your files, but sometimes files come from other sources.
     - If you are lucky, they will follow nice conventions! 🎉
     - but often they won’t 🫤
-- To rename or not to rename, that is the question
+- To rename or not to rename, that is the question.
     - Leaving the name as it was sent can make it easier to track in correspondence
     - Reasons to rename:
        - uniformative generic names: data.txt
        - add source or date information
        - converting spaces or other special characters (but try to write code that can handle these!)
-    - If you choose to rename, do it with a script and document the original name and source. Or we will take care of this for you!
+    - If you choose to rename, do it with a script and document the original name and source. Or ask us to take care of this for you!
 
 
 ## File Format
