@@ -51,9 +51,9 @@ File Naming follows conventions that make files easily identifiable, typically i
         - { left curly bracket
         - } right curly bracket
         - \ back slash
-        - < left angle bracket
-        - > right angle bracket
-        - * asterisk
+        - left angle bracket: <
+        - right angle bracket: >
+        - asterisk: *
         - ? question mark
         - / forward slash
         - blank spaces
