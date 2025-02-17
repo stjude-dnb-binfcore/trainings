@@ -7,24 +7,26 @@ set -o pipefail
 # Set up modules
 module load R/4.4.0
 module load pandoc/3.2
-#module load texlive/20240326 #to load LaTeX on a compute node
+module load texlive/20240326 #to load LaTeX on a compute node
 
 # Read paths
 rootdir=$(realpath "./../../..")
-echo "$rootdir"
+#echo "$rootdir"
 
 moduledir="$rootdir/courses/sc-rna-seq-snap-repo/tutorial"
-echo "$moduledir"
+#echo "$moduledir"
 
 # Create the output directory if it doesn't exist
 mkdir -p "$moduledir/snap-tutorial-docs"
 
 resultsdir="$moduledir/snap-tutorial-docs"
-echo "$resultsdir"
+#echo "$resultsdir"
 
 ################################################################################################################
 # Run Rscript to render the RMarkdown file to HTML
 Rscript -e "rmarkdown::render('01-snap-repo-tutorial.Rmd', 
-            output_file = paste0('$resultsdir', '/Snap-tutorial-', Sys.Date(), '.html'), 
+            output_dir = file.path('$resultsdir'),
+            output_file = c(paste('Documentation-', 'snap-repo-tutorial-', Sys.Date(), sep = '')),
+            output_format = 'all',
             params = list(root_dir = '$rootdir'))"
 ################################################################################################################

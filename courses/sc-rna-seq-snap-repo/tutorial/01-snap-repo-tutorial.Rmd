@@ -93,7 +93,7 @@ This notebook offers guidelines and best practices for effectively using the [si
 
 ## Prerequisites
 
-We assume users have some practical experience using Shell, `git`, and `GitHub`.
+We assume users have basic experience using Shell, git, and GitHub.
 
 
 # How to access and run the snap pipeline
