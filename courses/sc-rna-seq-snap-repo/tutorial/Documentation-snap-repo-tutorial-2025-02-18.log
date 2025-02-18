@@ -1,12 +1,12 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.3.26)  17 FEB 2025 19:34
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.3.26)  18 FEB 2025 10:09
  restricted system commands enabled.
 **/research_jude/rgs01_jude/dept/DNB/core_operations/Bioinformatics/achroni/Git
 Hub/trainings/courses/sc-rna-seq-snap-repo/tutorial/snap-tutorial-docs/Document
-ation-snap-repo-tutorial-2025-02-17.tex
+ation-snap-repo-tutorial-2025-02-18.tex
 
 (/research_jude/rgs01_jude/dept/DNB/core_operations/Bioinformatics/achroni/GitH
 ub/trainings/courses/sc-rna-seq-snap-repo/tutorial/snap-tutorial-docs/Documenta
-tion-snap-repo-tutorial-2025-02-17.tex
+tion-snap-repo-tutorial-2025-02-18.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
 Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
@@ -633,8 +633,8 @@ Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
 LaTeX Info: Redefining \href on input line 71.
 Package hyperref Info: Option `colorlinks' set `true' on input line 79.
-(./Documentation-snap-repo-tutorial-2025-02-17.aux)
-\openout1 = Documentation-snap-repo-tutorial-2025-02-17.aux
+(./Documentation-snap-repo-tutorial-2025-02-18.aux)
+\openout1 = Documentation-snap-repo-tutorial-2025-02-18.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
 LaTeX Font Info:    ... okay on input line 85.
@@ -999,10 +999,10 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (/research/rgs01/applications/hpcf/authorized_apps/rhel8_apps/texlive/install/2
 024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) (./Documentation-snap-repo-tutorial-2025-02-17.toc)
+) (./Documentation-snap-repo-tutorial-2025-02-18.toc)
 \tf@toc=\write3
 
-\openout3 = Documentation-snap-repo-tutorial-2025-02-17.toc
+\openout3 = Documentation-snap-repo-tutorial-2025-02-18.toc
 </research_jude/rgs01_jude/dept/DNB/core_operations/Bioinformatics/achroni/GitH
 ub/trainings/figures/img/DNB-BINF-Core-logo.png, id=22, 615.29875pt x 236.885pt
 >
@@ -1040,7 +1040,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 9.0pt on input line 107.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 5.0pt on input line 107.
-[2] [3] [4] (./Documentation-snap-repo-tutorial-2025-02-17.aux)
+[2] [3] [4] (./Documentation-snap-repo-tutorial-2025-02-18.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -1054,7 +1054,7 @@ Here is how much of LuaTeX's memory you used:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 16 glue, 5 kern, 1 penalty, 3 glyph, 2
 7 attribute, 58 glue_spec, 27 attribute_list, 1 write, 1 user_defined, 4 pdf_act
 ion nodes
-   avail lists: 1:2,2:555,3:754,4:120,5:324,6:98,7:6584,8:125,9:614,10:12,11:326
+   avail lists: 1:3,2:555,3:754,4:120,5:324,6:98,7:6586,8:125,9:614,10:12,11:330
  42355 multiletter control sequences out of 65536+600000
  78 fonts using 24555391 bytes
  90i,15n,121p,1187b,395s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1076,8 +1076,8 @@ esearch/rgs01/applications/hpcf/authorized_apps/rhel8_apps/texlive/install/2024/
 texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></research/rgs01/appli
 cations/hpcf/authorized_apps/rhel8_apps/texlive/install/2024/texmf-dist/fonts/op
 entype/public/lm/lmroman17-regular.otf>
-Output written on Documentation-snap-repo-tutorial-2025-02-17.pdf (4 pages, 245
-703 bytes).
+Output written on Documentation-snap-repo-tutorial-2025-02-18.pdf (4 pages, 245
+799 bytes).
 
 PDF statistics: 236 PDF objects out of 1000 (max. 8388607)
  196 compressed objects within 2 object streams

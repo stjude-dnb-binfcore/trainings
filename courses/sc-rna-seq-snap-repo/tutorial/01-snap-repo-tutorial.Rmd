@@ -105,7 +105,7 @@ We recommend that users fork the `sc-rna-seq-snap` repository. Team members shou
   - Team members: Retain the pipeline name and append the project name at the end, e.g., `sc-rna-seq-snap-Vsx2_SE`.
   - External collaborators: Keep the pipeline name as-is, unless you plan to use the repository for multiple projects. In that case, follow the same naming convention as team members.
 
-## Privacy of your fork
+## Managing the privacy of your fork
 
 Please be aware that forked repositories are public by default and will contain the code from the main branch of the `sc-rna-seq-snap` repository, which has been reviewed and tested.
 
@@ -153,7 +153,7 @@ Please refer to the `<analysis_module>/README.md` files for instructions on how 
 
 ## Container Overview
 
-We have generated a Docker image that contain all tools, packages, and dependencies necessary to run the code and analyses modules. The environment is specifically configured for `Rstudio/R v4.4.0` and `Seurat v4.4.0`. For more details, please refer to the [README.md](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/blob/main/run-container/README.md#load-specific-version-of-singularity).
+We have generated a Docker image that contains all tools, packages, and dependencies necessary to run the code and analyses modules. The environment is specifically configured for `Rstudio/R v4.4.0` and `Seurat v4.4.0`. For more details, please refer to the [README.md](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/blob/main/run-container/README.md#load-specific-version-of-singularity).
 
 ## CPU and Memory Resources
 
