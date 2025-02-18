@@ -98,20 +98,31 @@ We assume users have basic experience using Shell, git, and GitHub.
 
 # How to access and run the snap pipeline
 
-We recommend that users fork the `sc-rna-seq-snap` repo. Team members should use the [stjude-dnb-binfcore](https://github.com/stjude-dnb-binfcore) account, while others can use their preferred GitHub account. We welcome collaborations, so please feel free to reach out if you're interested in being added to the `stjude-dnb-binfcore` account.
+We recommend that users fork the `sc-rna-seq-snap` repository. Team members should use the [stjude-dnb-binfcore](https://github.com/stjude-dnb-binfcore) account, while others can use their preferred GitHub account. We welcome collaborations, so please feel free to reach out if you're interested in being added to the `stjude-dnb-binfcore` account.
 
-## Naming of the repo/project
+## Naming your fork
 
   - Team members: Retain the pipeline name and append the project name at the end, e.g., `sc-rna-seq-snap-Vsx2_SE`.
   - External collaborators: Keep the pipeline name as-is, unless you plan to use the repository for multiple projects. In that case, follow the same naming convention as team members.
 
-## Privacy repo/project
+## Privacy of your fork
 
-Please note that the forked repositories are public and contain the code from the main branch of the `sc-rna-seq-snap` repo (code reviewed and tested). User needs to ensure that the main branch of the forked repo is always up to date with `stjude-dnb-binfcore/sc-rna-seq-snap:main`. 
+Please be aware that forked repositories are public by default and will contain the code from the main branch of the `sc-rna-seq-snap` repository, which has been reviewed and tested.
 
 No results will be published unless the project is under review or has been officially published. 
 
 Furthermore, we adhere to strict guidelines to ensure privacy and protect sensitive data. Sensitive file paths and patient-related data must never be published on GitHub.
+
+## Synchronizing your fork
+
+User needs to ensure that the main branch of the forked repository is always up to date with `stjude-dnb-binfcore/sc-rna-seq-snap:main`. 
+
+When syncing your forked repository with the main repository, please be cautious of any changes made to the following files, as they are typically modified and specified for project data analysis:
+
+   - `project_parameters.Config.yaml`
+   - `./analyses/cellranger-analysis/waiter.sh`
+
+Before pulling the latest changes, stash any modifications you have made to these files. This ensures that you won't accidentally overwrite your changes when syncing with the main repository. For more details, see the [README.md](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/blob/main/README.md#to-run-the-code-in-this-repository).
 
 ## Accessing the code
 

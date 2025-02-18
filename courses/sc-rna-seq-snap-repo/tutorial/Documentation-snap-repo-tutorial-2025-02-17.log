@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.3.26)  17 FEB 2025 13:33
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.3.26)  17 FEB 2025 19:34
  restricted system commands enabled.
 **/research_jude/rgs01_jude/dept/DNB/core_operations/Bioinformatics/achroni/Git
 Hub/trainings/courses/sc-rna-seq-snap-repo/tutorial/snap-tutorial-docs/Document
@@ -1004,7 +1004,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 \openout3 = Documentation-snap-repo-tutorial-2025-02-17.toc
 </research_jude/rgs01_jude/dept/DNB/core_operations/Bioinformatics/achroni/GitH
-ub/trainings/figures/img/DNB-BINF-Core-logo.png, id=21, 615.29875pt x 236.885pt
+ub/trainings/figures/img/DNB-BINF-Core-logo.png, id=22, 615.29875pt x 236.885pt
 >
 File: /research_jude/rgs01_jude/dept/DNB/core_operations/Bioinformatics/achroni
 /GitHub/trainings/figures/img/DNB-BINF-Core-logo.png Graphic file (type png)
@@ -1048,14 +1048,14 @@ L3 programming layer <2024-03-14>
 )
 
 Here is how much of LuaTeX's memory you used:
- 20639 strings out of 476435
+ 20643 strings out of 476435
  125086,1977958 words of node,token memory allocated
- 738 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 local_par, 15 glue, 4 kern, 1 penalty, 1 margin_k
-ern, 4 glyph, 23 attribute, 58 glue_spec, 23 attribute_list, 1 write, 1 user_def
-ined, 3 pdf_action nodes
-   avail lists: 1:2,2:680,3:835,4:115,5:312,6:95,7:6591,8:125,9:590,10:12,11:344
- 42353 multiletter control sequences out of 65536+600000
+ 761 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 local_par, 16 glue, 5 kern, 1 penalty, 3 glyph, 2
+7 attribute, 58 glue_spec, 27 attribute_list, 1 write, 1 user_defined, 4 pdf_act
+ion nodes
+   avail lists: 1:2,2:555,3:754,4:120,5:324,6:98,7:6584,8:125,9:614,10:12,11:326
+ 42355 multiletter control sequences out of 65536+600000
  78 fonts using 24555391 bytes
  90i,15n,121p,1187b,395s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </research/rgs01/applications/hpcf/authorized_apps/rhel8_apps/texlive/install/20
@@ -1076,11 +1076,11 @@ esearch/rgs01/applications/hpcf/authorized_apps/rhel8_apps/texlive/install/2024/
 texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></research/rgs01/appli
 cations/hpcf/authorized_apps/rhel8_apps/texlive/install/2024/texmf-dist/fonts/op
 entype/public/lm/lmroman17-regular.otf>
-Output written on Documentation-snap-repo-tutorial-2025-02-17.pdf (4 pages, 244
-471 bytes).
+Output written on Documentation-snap-repo-tutorial-2025-02-17.pdf (4 pages, 245
+703 bytes).
 
-PDF statistics: 227 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 131072)
- 137 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 236 PDF objects out of 1000 (max. 8388607)
+ 196 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 131072)
+ 145 words of extra memory for PDF output out of 10000 (max. 100000000)
 

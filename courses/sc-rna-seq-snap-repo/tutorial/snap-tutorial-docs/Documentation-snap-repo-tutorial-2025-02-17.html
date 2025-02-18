@@ -2855,14 +2855,13 @@ GitHub.</p>
 <div id="how-to-access-and-run-the-snap-pipeline" class="section level1" number="2">
 <h1><span class="header-section-number">2</span> How to access and run
 the snap pipeline</h1>
-<p>We recommend that users fork the <code>sc-rna-seq-snap</code> repo.
-Team members should use the <a href="https://github.com/stjude-dnb-binfcore">stjude-dnb-binfcore</a>
+<p>We recommend that users fork the <code>sc-rna-seq-snap</code>
+repository. Team members should use the <a href="https://github.com/stjude-dnb-binfcore">stjude-dnb-binfcore</a>
 account, while others can use their preferred GitHub account. We welcome
 collaborations, so please feel free to reach out if you’re interested in
 being added to the <code>stjude-dnb-binfcore</code> account.</p>
-<div id="naming-of-the-repoproject" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Naming of the
-repo/project</h2>
+<div id="naming-your-fork" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Naming your fork</h2>
 <ul>
 <li>Team members: Retain the pipeline name and append the project name
 at the end, e.g., <code>sc-rna-seq-snap-Vsx2_SE</code>.</li>
@@ -2871,22 +2870,39 @@ plan to use the repository for multiple projects. In that case, follow
 the same naming convention as team members.</li>
 </ul>
 </div>
-<div id="privacy-repoproject" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Privacy
-repo/project</h2>
-<p>Please note that the forked repositories are public and contain the
-code from the main branch of the <code>sc-rna-seq-snap</code> repo (code
-reviewed and tested). User needs to ensure that the main branch of the
-forked repo is always up to date with
-<code>stjude-dnb-binfcore/sc-rna-seq-snap:main</code>.</p>
+<div id="privacy-of-your-fork" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Privacy of your
+fork</h2>
+<p>Please be aware that forked repositories are public by default and
+will contain the code from the main branch of the
+<code>sc-rna-seq-snap</code> repository, which has been reviewed and
+tested.</p>
 <p>No results will be published unless the project is under review or
 has been officially published.</p>
 <p>Furthermore, we adhere to strict guidelines to ensure privacy and
 protect sensitive data. Sensitive file paths and patient-related data
 must never be published on GitHub.</p>
 </div>
-<div id="accessing-the-code" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Accessing the
+<div id="synchronizing-your-fork" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Synchronizing your
+fork</h2>
+<p>User needs to ensure that the main branch of the forked repository is
+always up to date with
+<code>stjude-dnb-binfcore/sc-rna-seq-snap:main</code>.</p>
+<p>When syncing your forked repository with the main repository, please
+be cautious of any changes made to the following files, as they are
+typically modified and specified for project data analysis:</p>
+<ul>
+<li><code>project_parameters.Config.yaml</code></li>
+<li><code>./analyses/cellranger-analysis/waiter.sh</code></li>
+</ul>
+<p>Before pulling the latest changes, stash any modifications you have
+made to these files. This ensures that you won’t accidentally overwrite
+your changes when syncing with the main repository. For more details,
+see the <a href="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/blob/main/README.md#to-run-the-code-in-this-repository">README.md</a>.</p>
+</div>
+<div id="accessing-the-code" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Accessing the
 code</h2>
 <p>Next, open the terminal, navigate to your desired directory, and use
 <code>git clone</code> to clone the repository. For more details, see
