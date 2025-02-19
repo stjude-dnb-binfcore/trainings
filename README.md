@@ -39,7 +39,7 @@ cd $(dirname "${BASH_SOURCE[0]}")/Trainings/courses/<course_of_interest>
 
 ## Contact
 
-Contributions, issues, and feature requests are welcome! Please feel free to check [issues](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/issues).
+Contributions, issues, and feature requests are welcome! Please feel free to check [issues](https://github.com/stjude-dnb-binfcore/trainings/issues).
 
 ---
 

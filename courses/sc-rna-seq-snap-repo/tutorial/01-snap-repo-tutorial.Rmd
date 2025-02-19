@@ -149,7 +149,7 @@ Our team at the Bioinformatics core at DNB maintains the following cell type gen
 
 ## Analysis module
 
-Please refer to the `<analysis_module>/README.md` files for instructions on how to run the specific analysis module. These files contain the required parameters and necessary files to successfully execute the module’s pipeline.
+Please refer to the [analysis_module/README.md](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/tree/main/analyses) files for instructions on how to run the specific analysis module. These files contain the required parameters and necessary files to successfully execute the module’s pipeline.
 
 ## Container Overview
 
