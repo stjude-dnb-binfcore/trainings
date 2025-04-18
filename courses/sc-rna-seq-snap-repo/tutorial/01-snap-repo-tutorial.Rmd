@@ -96,9 +96,11 @@ This notebook offers guidelines and best practices for effectively using the [si
 We assume users have basic experience using Shell, git, and GitHub.
 
 
-# How to access and run the snap pipeline
+# Getting Started
 
-We recommend that users fork the `sc-rna-seq-snap` repository. Team members should use the [stjude-dnb-binfcore](https://github.com/stjude-dnb-binfcore) account, while others can use their preferred GitHub account. We welcome collaborations, so please feel free to reach out if you're interested in being added to the `stjude-dnb-binfcore` account.
+## Accessing the Code
+
+We recommend that users fork the `sc-rna-seq-snap` repository and then clone their forked repository to their local machine. Team members should use the [stjude-dnb-binfcore](https://github.com/stjude-dnb-binfcore) account, while others can use their preferred GitHub account. We welcome collaborations, so please feel free to reach out if you're interested in being added to the `stjude-dnb-binfcore` account.
 
 ## Naming your fork
 
@@ -113,20 +115,50 @@ No results will be published unless the project is under review or has been offi
 
 Furthermore, we adhere to strict guidelines to ensure privacy and protect sensitive data. Sensitive file paths and patient-related data must never be published on GitHub.
 
-## Synchronizing your fork
+
+## Running the Code
+
+1. Configure Your Parameters
+
+Replace the project_parameters.Config.yaml file with your own file paths and parameters.
+
+2. Navigate to an Analysis Module
+
+Change to the relevant directory and run the desired shell script:
+
+```
+cd ./sc-rna-seq-snap/analyses/<module_of_interest>
+```
+
+3. Sync Your Fork
 
 User needs to ensure that the main branch of the forked repository is always up to date with `stjude-dnb-binfcore/sc-rna-seq-snap:main`. 
+
+If your fork is behind the main repository (`stjude-dnb-binfcore/sc-rna-seq-snap:main`), sync it to ensure you have the latest updates. This will update the main branch of your project repo with the new code and modules (if any). This will add code and not break any analyses already run in your project repo. 
 
 When syncing your forked repository with the main repository, please be cautious of any changes made to the following files, as they are typically modified and specified for project data analysis:
 
    - `project_parameters.Config.yaml`
-   - `./analyses/cellranger-analysis/waiter.sh`
 
-Before pulling the latest changes, stash any modifications you have made to these files. This ensures that you won't accidentally overwrite your changes when syncing with the main repository. For more details, see the [README.md](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/blob/main/README.md#to-run-the-code-in-this-repository).
+Before pulling the latest changes, stash any modifications you have made to these files. This ensures that you won't accidentally overwrite your changes when syncing with the main repository. 
 
-## Accessing the code
+Some useful git commands:
 
-Next, open the terminal, navigate to your desired directory, and use `git clone` to clone the repository. For more details, see the [README.md](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/blob/main/README.md#to-access-the-code-in-this-repository).
+```
+git branch
+git checkout main
+git config pull.rebase false
+
+git status
+git add project_parameters.Config.yaml
+git commit -m "Update yaml"
+```
+
+Finally, `git pull` to get the most updated changes and code in your project repo. Please be mindful of any local changes in files in your project repo that you have done, e.g., `project_parameters.Config.yaml`. You will need to commit or stash (or restore) the changes to the yaml before completing the pull.
+
+```
+git pull
+```
 
 
 # Data
@@ -135,9 +167,17 @@ Next, open the terminal, navigate to your desired directory, and use `git clone`
 
 Replace parameters in the `project_parameters.Config.yaml` with the correct file paths and parameters specific to your project. Ensure that you use the appropriate file paths and parameters for your data, such as assay type and condition. The default values are set for scRNA-seq data analysis without ambient RNA removal and doublet detection.
 
+## Preparing project metadata
+
+The pipeline requires a TSV file containing essential metadata for cohort analysis. The file must be named `project_metadata.tsv`. It can include one or more samples, as long as it contains at least the following columns in this exact order: `ID`, `SAMPLE`, and `FASTQ`. Additional metadata columns can be added and arranged as needed by the user (though not required).
+
+The file can be stored anywhere, but its filepath must be specified in the `project_parameters.Config.yaml` file.
+
+For user convenience, an example [project_metadata.tsv](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/blob/main/data/project_metadata) file is provided.
+
 ## Genome references
 
-Our team at the Bioinformatics core at DNB maintains the following genome references: `GRCh38`, `GRCm39`, `GRCh38ANDGRCm39`, and `GRCh38_GFP_tdTomato`, for human, mouse, and dual index genomes, respectively. Please submit an [issue](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/issues) to request the path to the reference genome of preference. 
+Our team at the Bioinformatics core at DNB maintains the following genome references: (1) human: `GRCh38` and `hg19`; (2) mouse: `GRCm39`, `mm10` and `mm9`; and (3) dual index genomes: `GRCh38ANDGRCm39`, `GRCh38_mm10`, `GRCh38_mm9`, and `GRCh38_GFP_tdTomato`. Please submit an [issue](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/issues) to request the path to the reference genome of preference. 
 
 
 ## Cell type gene marker lists 
@@ -157,7 +197,15 @@ We have generated a Docker image that contains all tools, packages, and dependen
 
 ## CPU and Memory Resources
 
-While we have provided estimates for the computational resources required, users may need to adjust memory settings based on the size of the cohort and the specific demands of the analysis. For reference, the estimated resources are for 8 samples with approximately 50,000 cells in total. For further details, please consult the [README.md](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/blob/main/README.md#to-request-memory-from-the-hpcf-cluster).
+While we provide estimates for the computational resources required (based on 8 samples with approximately 50,000 cells), users may need to adjust memory settings based on cohort size and analysis requirements.
+
+Important Considerations:
+
+  - Adjust memory requests according to the size of your cohort and specific analysis needs.
+  - For St. Jude users:
+    - Refer to the [Introduction to the HPCF cluster](https://wiki.stjude.org/display/HPCF/Introduction+to+the+HPCF+cluster#IntroductiontotheHPCFcluster-queuesQueues:) for detailed guidance.
+    - If you require more than 1 TB of memory, use the `large_mem` queue to ensure proper resource allocation.
+
 
 
 # Contact

@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2025-02-18" />
+<meta name="date" content="2025-04-18" />
 
 <title>Tutorial on how to use the single cell RNA seq Snap pipeline</title>
 
@@ -2810,7 +2810,7 @@ border-radius: 0px;
 
 <h1 class="title toc-ignore">Tutorial on how to use the single cell RNA
 seq Snap pipeline</h1>
-<h4 class="date">2025-02-18</h4>
+<h4 class="date">2025-04-18</h4>
 
 </div>
 
@@ -2852,16 +2852,20 @@ maintain and update the pipeline with new analysis modules.</p>
 GitHub.</p>
 </div>
 </div>
-<div id="how-to-access-and-run-the-snap-pipeline" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> How to access and run
-the snap pipeline</h1>
+<div id="getting-started" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Getting Started</h1>
+<div id="accessing-the-code" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Accessing the
+Code</h2>
 <p>We recommend that users fork the <code>sc-rna-seq-snap</code>
-repository. Team members should use the <a href="https://github.com/stjude-dnb-binfcore">stjude-dnb-binfcore</a>
+repository and then clone their forked repository to their local
+machine. Team members should use the <a href="https://github.com/stjude-dnb-binfcore">stjude-dnb-binfcore</a>
 account, while others can use their preferred GitHub account. We welcome
 collaborations, so please feel free to reach out if you’re interested in
 being added to the <code>stjude-dnb-binfcore</code> account.</p>
-<div id="naming-your-fork" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Naming your fork</h2>
+</div>
+<div id="naming-your-fork" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Naming your fork</h2>
 <ul>
 <li>Team members: Retain the pipeline name and append the project name
 at the end, e.g., <code>sc-rna-seq-snap-Vsx2_SE</code>.</li>
@@ -2870,8 +2874,8 @@ plan to use the repository for multiple projects. In that case, follow
 the same naming convention as team members.</li>
 </ul>
 </div>
-<div id="managing-the-privacy-of-your-fork" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Managing the privacy
+<div id="managing-the-privacy-of-your-fork" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Managing the privacy
 of your fork</h2>
 <p>Please be aware that forked repositories are public by default and
 will contain the code from the main branch of the
@@ -2883,30 +2887,54 @@ has been officially published.</p>
 protect sensitive data. Sensitive file paths and patient-related data
 must never be published on GitHub.</p>
 </div>
-<div id="synchronizing-your-fork" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Synchronizing your
-fork</h2>
+<div id="running-the-code" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Running the Code</h2>
+<ol style="list-style-type: decimal">
+<li>Configure Your Parameters</li>
+</ol>
+<p>Replace the project_parameters.Config.yaml file with your own file
+paths and parameters.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Navigate to an Analysis Module</li>
+</ol>
+<p>Change to the relevant directory and run the desired shell
+script:</p>
+<pre><code>cd ./sc-rna-seq-snap/analyses/&lt;module_of_interest&gt;</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Sync Your Fork</li>
+</ol>
 <p>User needs to ensure that the main branch of the forked repository is
 always up to date with
 <code>stjude-dnb-binfcore/sc-rna-seq-snap:main</code>.</p>
+<p>If your fork is behind the main repository
+(<code>stjude-dnb-binfcore/sc-rna-seq-snap:main</code>), sync it to
+ensure you have the latest updates. This will update the main branch of
+your project repo with the new code and modules (if any). This will add
+code and not break any analyses already run in your project repo.</p>
 <p>When syncing your forked repository with the main repository, please
 be cautious of any changes made to the following files, as they are
 typically modified and specified for project data analysis:</p>
 <ul>
 <li><code>project_parameters.Config.yaml</code></li>
-<li><code>./analyses/cellranger-analysis/waiter.sh</code></li>
 </ul>
 <p>Before pulling the latest changes, stash any modifications you have
 made to these files. This ensures that you won’t accidentally overwrite
-your changes when syncing with the main repository. For more details,
-see the <a href="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/blob/main/README.md#to-run-the-code-in-this-repository">README.md</a>.</p>
-</div>
-<div id="accessing-the-code" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> Accessing the
-code</h2>
-<p>Next, open the terminal, navigate to your desired directory, and use
-<code>git clone</code> to clone the repository. For more details, see
-the <a href="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/blob/main/README.md#to-access-the-code-in-this-repository">README.md</a>.</p>
+your changes when syncing with the main repository.</p>
+<p>Some useful git commands:</p>
+<pre><code>git branch
+git checkout main
+git config pull.rebase false
+
+git status
+git add project_parameters.Config.yaml
+git commit -m &quot;Update yaml&quot;</code></pre>
+<p>Finally, <code>git pull</code> to get the most updated changes and
+code in your project repo. Please be mindful of any local changes in
+files in your project repo that you have done, e.g.,
+<code>project_parameters.Config.yaml</code>. You will need to commit or
+stash (or restore) the changes to the yaml before completing the
+pull.</p>
+<pre><code>git pull</code></pre>
 </div>
 </div>
 <div id="data" class="section level1" number="3">
@@ -2921,17 +2949,34 @@ data, such as assay type and condition. The default values are set for
 scRNA-seq data analysis without ambient RNA removal and doublet
 detection.</p>
 </div>
-<div id="genome-references" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Genome
+<div id="preparing-project-metadata" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Preparing project
+metadata</h2>
+<p>The pipeline requires a TSV file containing essential metadata for
+cohort analysis. The file must be named
+<code>project_metadata.tsv</code>. It can include one or more samples,
+as long as it contains at least the following columns in this exact
+order: <code>ID</code>, <code>SAMPLE</code>, and <code>FASTQ</code>.
+Additional metadata columns can be added and arranged as needed by the
+user (though not required).</p>
+<p>The file can be stored anywhere, but its filepath must be specified
+in the <code>project_parameters.Config.yaml</code> file.</p>
+<p>For user convenience, an example <a href="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/blob/main/data/project_metadata">project_metadata.tsv</a>
+file is provided.</p>
+</div>
+<div id="genome-references" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Genome
 references</h2>
 <p>Our team at the Bioinformatics core at DNB maintains the following
-genome references: <code>GRCh38</code>, <code>GRCm39</code>,
-<code>GRCh38ANDGRCm39</code>, and <code>GRCh38_GFP_tdTomato</code>, for
-human, mouse, and dual index genomes, respectively. Please submit an <a href="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/issues">issue</a>
+genome references: (1) human: <code>GRCh38</code> and <code>hg19</code>;
+(2) mouse: <code>GRCm39</code>, <code>mm10</code> and <code>mm9</code>;
+and (3) dual index genomes: <code>GRCh38ANDGRCm39</code>,
+<code>GRCh38_mm10</code>, <code>GRCh38_mm9</code>, and
+<code>GRCh38_GFP_tdTomato</code>. Please submit an <a href="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/issues">issue</a>
 to request the path to the reference genome of preference.</p>
 </div>
-<div id="cell-type-gene-marker-lists" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Cell type gene marker
+<div id="cell-type-gene-marker-lists" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Cell type gene marker
 lists</h2>
 <p>Our team at the Bioinformatics core at DNB maintains the following
 cell type gene marker lists for cell type annotation:
@@ -2961,11 +3006,22 @@ and <code>Seurat v4.4.0</code>. For more details, please refer to the <a href="h
 <div id="cpu-and-memory-resources" class="section level2" number="4.3">
 <h2><span class="header-section-number">4.3</span> CPU and Memory
 Resources</h2>
-<p>While we have provided estimates for the computational resources
-required, users may need to adjust memory settings based on the size of
-the cohort and the specific demands of the analysis. For reference, the
-estimated resources are for 8 samples with approximately 50,000 cells in
-total. For further details, please consult the <a href="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/blob/main/README.md#to-request-memory-from-the-hpcf-cluster">README.md</a>.</p>
+<p>While we provide estimates for the computational resources required
+(based on 8 samples with approximately 50,000 cells), users may need to
+adjust memory settings based on cohort size and analysis
+requirements.</p>
+<p>Important Considerations:</p>
+<ul>
+<li>Adjust memory requests according to the size of your cohort and
+specific analysis needs.</li>
+<li>For St. Jude users:
+<ul>
+<li>Refer to the <a href="https://wiki.stjude.org/display/HPCF/Introduction+to+the+HPCF+cluster#IntroductiontotheHPCFcluster-queuesQueues:">Introduction
+to the HPCF cluster</a> for detailed guidance.</li>
+<li>If you require more than 1 TB of memory, use the
+<code>large_mem</code> queue to ensure proper resource allocation.</li>
+</ul></li>
+</ul>
 </div>
 </div>
 <div id="contact" class="section level1" number="5">
