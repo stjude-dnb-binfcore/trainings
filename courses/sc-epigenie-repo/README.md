@@ -28,7 +28,7 @@ In this workshop, we will discuss how to navigate the analysis modules and explo
 
 ## Target Audience
 
-The course is intended for wet lab biologists that are interested in exploring the capabilities of the `scEpiGenie` pipeline. 
+The course is intended for wet lab biologists or bioinformaticians that are interested in exploring the capabilities of the `scEpiGenie` pipeline. 
 
 
 > These materials were developed for a trainer-led workshop, but are also amenable to self-guided learning.
