@@ -1,6 +1,10 @@
 # scEpiGenie: A Workflow for Single-cell ATAC-seq (scATAC-seq)
 
 
+- [Chen et al.](https://link.springer.com/article/10.1186/s13059-019-1854-5). 2019. Assessment of computational methods for the analysis of single-cell ATAC-seq data. Genome Biology, 20, 241.
+- [Signac](https://stuartlab.org/signac/) is a comprehensive R package for the analysis of single-cell chromatin data.
+- [Introduction to single cell ATAC data analysis in R](https://www.youtube.com/watch?v=e2396GKFMRY)
+
 
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the course or have follow up questions, please feel free to create an [issue](https://github.com/stjude-dnb-binfcore/trainings/issues).

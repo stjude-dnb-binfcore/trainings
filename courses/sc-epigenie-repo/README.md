@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/DNB-BINF-Core-logo.png" alt="scEpiGenie repository logo" width="560px" />
+  <img src="img/DNB-BINF-Core-logo.png" alt="DNB-BINF-Core-logo" width="560px" />
 </p>
 <p align="center">
   <a href="https://www.repostatus.org/#active"><img src="https://www.repostatus.org/badges/latest/active.svg?style=for-the-badge" alt="The project has reached a stable, usable state and is being actively developed." /></a>
@@ -34,6 +34,7 @@ The course is intended for wet lab biologists or bioinformaticians that are inte
 > These materials were developed for a trainer-led workshop, but are also amenable to self-guided learning.
 
 ## Lessons and Materials 
+
 * `./resources`: supplemental materials and learning resources 
 * `./lectures`: slides covering the `Learning Objectives`: [sc-epigenie-repo-2025-10-29](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-epigenie-repo/lectures/sc-epigenie-repo-2025-10-29.pdf)
 
@@ -42,12 +43,11 @@ The course is intended for wet lab biologists or bioinformaticians that are inte
 
 ```
 ├── img
-|   └── scEpiGenie_logo.png
+|   └── DNB-BINF-Core-logo.png
 ├── lectures
-|   └── sc-epigenie-repo-2025-10-29.pdf
-├── resources
+├── README.md
+└── resources
 |   └── links-to-resources.md
-└── README.md
 ```
 
 ## Course Authors
