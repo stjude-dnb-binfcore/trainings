@@ -25,6 +25,8 @@ cd $(dirname "${BASH_SOURCE[0]}")/Trainings/courses/<course_of_interest>
 |  ├── Automation-Reproducibility-compbio
 |  ├── Bulk-RNA-Seq
 |  ├── ChIP-Seq
+|  ├── data-organization
+|  ├── sc-epigenie-repo
 |  ├── sc-RNA-Seq
 |  └── sc-rna-seq-snap-repo
 ├── figures
