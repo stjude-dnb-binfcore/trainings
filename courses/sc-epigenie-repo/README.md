@@ -47,7 +47,7 @@ The course is intended for wet lab biologists or bioinformaticians that are inte
 ├── lectures
 ├── README.md
 └── resources
-|   └── links-to-resources.md
+|__ └── links-to-resources.md
 ```
 
 ## Course Authors
