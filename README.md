@@ -28,7 +28,8 @@ cd $(dirname "${BASH_SOURCE[0]}")/Trainings/courses/<course_of_interest>
 |  ├── data-organization
 |  ├── sc-epigenie-repo
 |  ├── sc-RNA-Seq
-|  └── sc-rna-seq-snap-repo
+|  ├── sc-rna-seq-snap-repo
+|  └── sc-rna-seq-snap-workshop
 ├── figures
 |  ├── barcodes
 |  ├── gitignore.txt

@@ -9,7 +9,7 @@
 
 # scRNA-seq Snap seq pipeline: Hands-on workshop
 
-A brief overview of single cell RNA-seq is followed by a guided, hands-on run of the [Single cell RNA Seq Snap workflow (ScRNASeqSnap)](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-rna-seq-snap-repo/). Using a small training dataset, the workflow is executed end-to-end: QC, alignment & quantification, integration, clustering, cell-type annotation, reporting/RShiny with an emphasis on reproducible execution on HPC (containerized environment). Upon completion, a working project folder containing standard figures, reports, RShiny app, and snap pipeline documentation are provided for continued exploration.
+A brief overview of single cell RNA-seq is followed by a guided, hands-on run of the [Single cell RNA Seq Snap workflow (ScRNASeqSnap)](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-rna-seq-snap-repo/). Using a small training dataset, the workflow is executed end-to-end: QC, alignment & quantification, integration, clustering, cell-type annotation, and reporting via RShiny—all within a reproducible, containerized HPC environment. Upon completion, participants receive a project folder containing standard figures, reports, an RShiny app, and comprehensive Snap pipeline documentation for further exploration.
 
 This workshop is an initiative of our team at the [Bioinformatics Core at the Department of Developmental Neurobiology at the St. Jude Children's Research Hospital](https://www.stjude.org/research/departments/developmental-neurobiology/shared-resources/bioinformatic-core.html)
 
@@ -24,10 +24,10 @@ This workshop is an initiative of our team at the [Bioinformatics Core at the De
 
 ## Learning Objectives
 
-1. Prepare the required inputs: a properly formatted project_metadata.tsv and project_parameters.Config.yaml.
-2. Launch the container on HPC and submit/monitor jobs.
-3. Run the `ScRNASeqSnap` modules in order
-4. Reviewing Results, Plots, and Reports
+1. Prepare the required inputs: a properly formatted `project_metadata.tsv` and `project_parameters.Config.yaml`.
+2. Launch the container on the HPC and submit or monitor your jobs.
+3. Run the ScRNASeqSnap modules sequentially.
+4. Review the generated results, plots, and reports.
 
 
 ## Target Audience
@@ -40,7 +40,7 @@ The course is intended for wet lab biologists or bioinformaticians that are inte
 ## Lessons and Materials 
 
 * `./resources`: supplemental materials and learning resources 
-* `./lectures`: slides covering the `scRNA-seq Snap seq pipeline: Hands-on workshop`: [Single cell RNA Seq Snap workflow (ScRNASeqSnap)](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-rna-seq-snap-repo/tutorial/snap-tutorial-docs)
+* `./lectures`: [sc-rna-seq-snap-workshop-2025-10-29](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-rna-seq-snap-workshop/lectures). _Currently under construction—stay tuned for updates!_ 🚧
 
  
 ## Below is the main directory structure listing the analyses and data files used in this repository
@@ -58,7 +58,6 @@ The course is intended for wet lab biologists or bioinformaticians that are inte
 ## Course Authors
 
 Asha Jacob Jannu, MS ([@ashajacob29](https://github.com/ashajacob29))
-Antonia Chroni, PhD ([@AntoniaChroni](https://github.com/AntoniaChroni))
 
 ## Contact
 
