@@ -1,4 +1,6 @@
-![DNB-BINF-Core-logo](https://github.com/stjudeDNBBinfCore/Trainings/tree/564aceb2087aa68333534effdf7187098bf28fe0/figures/img/DNB-BINF-Core-logo.png)
+<p align="center">
+  <img src="img/DNB-BINF-Core-logo.png" alt="DNB-BINF-Core-logo" width="560px" />
+</p>
 
 
 
@@ -17,7 +19,8 @@ St. Jude employees can have access to the [recording from the workshop](https://
 ## Below is the main directory structure listing the analyses and data files used in this repository
 
 ```
-├── gitignore.txt
+├── img
+|   └── DNB-BINF-Core-logo.png
 ├── lectures
 |   ├── Intro-to-sc-snRNA-seq-2024-09-18.pdf
 |   └── Intro-to-sc-snRNA-seq-2024-09-18.pptx
