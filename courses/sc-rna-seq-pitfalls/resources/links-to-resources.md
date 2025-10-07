@@ -1,10 +1,10 @@
 # Pitfalls of sc/snRNA-seq
 
 
-- [Luecken and Theis](https://doi.org/10.15252/msb.20188746). 2019. Current best practices in single-cell RNA-seq analysis: a tutorial. Molecular Systems Biology, 15, 6.
-- [Tran et al](https://doi.org/10.1186/s13059-019-1850-9). 2020. A benchmark of batch-effect correction methods for single-cell RNA sequencing data. Genome Biology, 21, 12.
-- [Heumos et al](https://doi.org/10.1038/s41576-023-00586-w). 2023. Best practices for single-cell analysis across modalities. Nature Reviews Genetics, 24, 550–572.
-- [Smith et al](https://doi.org/10.1038/s41586-025-09247-w). 2025. Lack of evidence for the transitional cerebellar progenitor. Nature, 643, E1–E8.
+- [Heumos et al. (2023).](https://doi.org/10.1038/s41576-023-00586-w) Best practices for single-cell analysis across modalities. *Nature Reviews Genetics*, 24(8), 550–572.
+- [Luecken & Theis (2019).](https://doi.org/10.15252/msb.20188746) Current best practices in single-cell RNA-seq analysis: a tutorial. *Molecular systems biology*, 15(6), e8746.
+- [Smith et al. (2025).](https://doi.org/10.1038/s41586-025-09247-w) Lack of evidence for the transitional cerebellar progenitor. *Nature*, 643(8071), E1–E8.
+- [Tran et al. (2020).](https://doi.org/10.1186/s13059-019-1850-9) A benchmark of batch-effect correction methods for single-cell RNA sequencing data. *Genome Biology*, 21(1), 12.
 
 
 ### Questions?
