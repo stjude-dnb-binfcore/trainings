@@ -57,14 +57,14 @@ For best practices and detailed guidelines on effectively using the Snap pipelin
 
 6. [Run Modules](#run-modules)
    - [1. Navigate to the analyses folder](#1-navigate-to-the-analyses-folder)
-   - [2. `fastqc-analysis` module](#2-fastqc-analysis-module)
-   - [3. `cellranger-analysis` module](#3-cellranger-analysis-module)
-   - [4. `upstream-analysis` module](#4-upstream-analysis-module)
-   - [5. `integrative-analysis` module](#5-integrative-analysis-module)
-   - [6. `cluster-cell-calling` module](#6-cluster-cell-calling-analysis-module)
-   - [7. `cell-types-annotation` module](#7-cell-types-annotation-module)
-   - [8. `rshiny-app` module](#8-rshiny-app-module)
-   - [9. `project-updates` module](#9-project-updates-module)
+   - [2. fastqc-analysis module](#2-fastqc-analysis-module)
+   - [3. cellranger-analysis module](#3-cellranger-analysis-module)
+   - [4. upstream-analysis module](#4-upstream-analysis-module)
+   - [5. integrative-analysis module](#5-integrative-analysis-module)
+   - [6. cluster-cell-calling module](#6-cluster-cell-calling-module)
+   - [7. cell-types-annotation module](#7-cell-types-annotation-module)
+   - [8. rshiny-app module](#8-rshiny-app-module)
+   - [9. project-updates module](#9-project-updates-module)
    - [10. Other available modules](#10-other-available-modules)
    
    
@@ -293,13 +293,13 @@ ls
 You should see subfolders like `fastqc-analysis`, `cellranger-analysis` and so on.
 
 
-### 2. `fastqc-analysis` module
+### 2. fastqc-analysis module
 
 **a. Submit as an LSF job:**
 To run `fastqc-analysis` module, enter in to the module folder and run lsf script: `lsf-script.txt`. This script tells the HPC to queue and run the job automatically in the background, freeing your terminal so you can continue working while the analysis runs.
 
 ```
-cd fastqc-analysis/ # enter the module folder
+cd fastqc-analysis/
 bsub < lsf-script.txt
 ```
 
@@ -324,71 +324,71 @@ exit
 ```
 
 
-### 3. `cellranger-analysis` module
+### 3. cellranger-analysis module
 
 To run this module, navigate to the module folder and run below:
 
 ```
-cd cellranger-analysis/ # enter the module folder
+cd cellranger-analysis/
 bsub < submit-multiple-jobs
 ```
 
 
-### 4. `upstream-analysis` module
+### 4. upstream-analysis module
 
 To run this module, navigate to the module folder and run below:
 
 ```
-cd upstream-analysis/ # enter the module folder
+cd upstream-analysis/
 bsub < lsf-script.txt
 ```
 
 
-### 5. `integrative-analysis` module
+### 5. integrative-analysis module
 
 To run this module, navigate to the module folder and run below:
 
 ```
-cd integrative-analysis/ # enter the module folder
+cd integrative-analysis/
 bsub < lsf-script.txt
 ```
 
 
-### 6. `cluster-cell-calling` module
+### 6. cluster-cell-calling module
 
 To run this module, navigate to the module folder and run below:
 
 ```
-cd cluster-cell-calling/ # enter the module folder
+cd cluster-cell-calling/
 bsub < lsf-script.txt
 ```
 
 
-### 7. `cell-types-annotation` module
+### 7. cell-types-annotation module
 
 To run this module, navigate to the module folder and run below:
 
 ```
-cd cell-types-annotation/ # enter the module folder
+cd cell-types-annotation/
 bsub < lsf-script.txt
 ```
 
 
-### 8. `rshiny-app` module
+### 8. rshiny-app module
 
 To run this module, navigate to the module folder and run below:
 
 ```
-cd rshiny-app/ # enter the module folder
+cd rshiny-app/
 bsub < lsf-script.txt
 ```
 
-### 9. `project-updates` module
+### 9. project-updates module
 
 To run this module, navigate to the module folder and run below:
 
 ```
-cd project-updates/ # enter the module folder
+cd project-updates/
 bsub < lsf-script.txt
 ```
 
@@ -404,6 +404,7 @@ bsub < lsf-script.txt
 ## Contact
 
 Contributions, issues, and feature requests are welcome! Please feel free to check [issues](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/issues).
+
 
 
 
