@@ -34,38 +34,38 @@ For best practices and detailed guidelines on effectively using the Snap pipelin
 ## Table of Contents
 
 1. [HPC Login and Basic Setup](#hpc-login-and-basic-setup)
-   - [Login](#login)
-   - [Start an interactive session](#start-an-interactive-session)
-   - [Check your location](#check-your-location)
+   - [1. Login](#1-login)
+   - [2. Start an interactive session](#2-start-an-interactive-session)
+   - [3. Check your location](#3-check-your-location)
 
 2. [Fork and Clone Snap Repository](#fork-and-clone-snap-repository)
-   - [Create a fork](#create-a-fork)
-   - [Clone](#clone)
+   - [1. Create a fork](#1-create-a-fork)
+   - [2. Clone](#2-clone)
 
 3. [Setup Singularity Container](#setup-singularity-container)
-   - [Load the singularity module](#load-the-singularity-module)
-   - [Pull the singularity container](#pull-the-singularity-container)
+   - [1. Load the singularity module](#1-load-the-singularity-module)
+   - [2. Pull the singularity container](#2-pull-the-singularity-container)
 
 4. [Prepare Metadata File](#prepare-metadata-file)
-   - [Training data](#training-data)
-   - [Create a metadata file](#create-a-metadata-file)
+   - [1. Training data](#1-training-data)
+   - [2. Create a metadata file](#2-create-a-metadata-file)
 
 5. [Config File Preparation](#config-file-preparation)
-   - [Required paths](#required-paths)
-   - [Other fields to edit](#other-fields-to-edit)
-   - [General edits](#general-edits)
+   - [1. Required paths](#1-required-paths)
+   - [2. Other fields to edit](#2-other-fields-to-edit)
+   - [3. General edits](#3-general-edits)
 
 6. [Run Modules](#run-modules)
-   - [Navigate to the analyses folder](#navigate-to-the-analyses-folder)
-   - [`fastqc-analysis` module](#fastqc-analysis-module)
-   - [`cellranger-analysis` module](#cellranger-analysis-module)
-   - [`upstream-analysis` module](#upstream-analysis-module)
-   - [`integrative-analysis` module](#integrative-analysis-module)
-   - [`cluster-cell-calling` module](#cluster-cell-calling-analysis-module)
-   - [`cell-types-annotation` module](#cell-types-annotation-module)
-   - [`rshiny-app` module](#rshiny-app-module)
-   - [`project-updates` module](#project-updates-module)
-   - [Other available modules](#other-available-modules)
+   - [1. Navigate to the analyses folder](#1-navigate-to-the-analyses-folder)
+   - [2. `fastqc-analysis` module](#2-fastqc-analysis-module)
+   - [3. `cellranger-analysis` module](#3-cellranger-analysis-module)
+   - [4. `upstream-analysis` module](#4-upstream-analysis-module)
+   - [5. `integrative-analysis` module](#5-integrative-analysis-module)
+   - [6. `cluster-cell-calling` module](#6-cluster-cell-calling-analysis-module)
+   - [7. `cell-types-annotation` module](#7-cell-types-annotation-module)
+   - [8. `rshiny-app` module](#8-rshiny-app-module)
+   - [9. `project-updates` module](#9-project-updates-module)
+   - [10. Other available modules](#10-other-available-modules)
    
    
 ---
@@ -186,7 +186,7 @@ It can include one or more samples, as long as it contains at least the followin
 :----------|:----------|:----------|
 | DYE001 | seq_submission_code1_sample1 | /absolute_path/seq_submission_code1/replicate1,/absolute_path/seq_submission_code1/replicate2 | 
 
-*Easiest way: Edit the provided template in `project_metdatda/`*
+*Easiest way: Edit the provided template in `project_metadata/`*
 
 Add additional metadata columns after these three columns.
 
@@ -278,7 +278,7 @@ to confirm the module ran successfully and contact the <strong>DNB Single Cell B
 </div>
 
 
-### 1. Navigate to the `analyses/` folder
+### 1. Navigate to the analyses folder
 
 Before running any module, make sure you are inside your working directory. In this case, it is `/home/username/sc-rna-seq-snap-dnb-training**YOUR-FIRST-NAME**/`. Run the following commands to do this:
 
