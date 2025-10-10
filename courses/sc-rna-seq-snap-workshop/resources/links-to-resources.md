@@ -2,11 +2,6 @@
 # scRNA-seq Snap seq pipeline: Hands-on workshop
 
 
-## Snap Seq Pipeline Tutorial and Documentation
-
-* [Single cell RNA Seq Snap workflow (ScRNASeqSnap)](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-rna-seq-snap-repo/tutorial/snap-tutorial-docs)
-
-
 ## Automation and Reproducibility
 
 * [Automation and Reproducibility in Computational Biology](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/Automation-Reproducibility-compbio)
