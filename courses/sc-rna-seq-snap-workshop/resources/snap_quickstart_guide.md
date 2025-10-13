@@ -293,7 +293,7 @@ ls
 You should see subfolders like `fastqc-analysis`, `cellranger-analysis` and so on.
 
 
-### 2. fastqc-analysis module
+### 2. Run the fastqc-analysis module
 
 **a. Submit as an LSF job:**
 To run `fastqc-analysis` module, enter in to the module folder and run lsf script: `lsf-script.txt`. This script tells the HPC to queue and run the job automatically in the background, freeing your terminal so you can continue working while the analysis runs.
@@ -324,7 +324,7 @@ exit
 ```
 
 
-### 3. cellranger-analysis module
+### 3. Run the cellranger-analysis module
 
 To run this module, navigate to the module folder and run below:
 
@@ -334,7 +334,7 @@ bsub < submit-multiple-jobs
 ```
 
 
-### 4. upstream-analysis module
+### 4. Run the upstream-analysis module
 
 To run this module, navigate to the module folder and run below:
 
@@ -343,8 +343,16 @@ cd upstream-analysis/
 bsub < lsf-script.txt
 ```
 
+**Note:** You may see `Error in quantile.default():` message because this workshop dataset has already been curated (no empty droplets). Please replace the following code in `01_run_SoupX.Rmd` at line 258:
 
-### 5. integrative-analysis module
+```
+sc <- autoEstCont(sc_raw, forceAccept = TRUE, tfidfMin = 0.1, soupQuantile = 0.9)
+
+```
+This adjustment allows the script to continue and generate results as expected. Continue..
+
+
+### 5. Run the integrative-analysis module
 
 To run this module, navigate to the module folder and run below:
 
@@ -354,7 +362,7 @@ bsub < lsf-script.txt
 ```
 
 
-### 6. cluster-cell-calling module
+### 6. Run the cluster-cell-calling module
 
 To run this module, navigate to the module folder and run below:
 
@@ -364,7 +372,7 @@ bsub < lsf-script.txt
 ```
 
 
-### 7. cell-types-annotation module
+### 7. Run the cell-types-annotation module
 
 To run this module, navigate to the module folder and run below:
 
@@ -374,7 +382,7 @@ bsub < lsf-script.txt
 ```
 
 
-### 8. rshiny-app module
+### 8. Run the rshiny-app module
 
 To run this module, navigate to the module folder and run below:
 
@@ -383,7 +391,7 @@ cd rshiny-app/
 bsub < lsf-script.txt
 ```
 
-### 9. project-updates module
+### 9. Run the project-updates module
 
 To run this module, navigate to the module folder and run below:
 
@@ -392,7 +400,7 @@ cd project-updates/
 bsub < lsf-script.txt
 ```
 
-### 10. Other available modules
+### 10. Run other available modules
 
 - `cell-contamination-removal-analysis` module (description="To remove clusters and repeat steps (4) and (5), e.g. for PDX experiments.", required=False)
 - `clone-phylogeny-analysis` module (description="Pipeline for Clone phylogeny analysis tool. This is currently available for human data only", required=False)
