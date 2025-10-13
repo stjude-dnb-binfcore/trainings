@@ -57,15 +57,15 @@ For best practices and detailed guidelines on effectively using the Snap pipelin
 
 6. [Run Modules](#run-modules)
    - [1. Navigate to the analyses folder](#1-navigate-to-the-analyses-folder)
-   - [2. fastqc-analysis module](#2-fastqc-analysis-module)
-   - [3. cellranger-analysis module](#3-cellranger-analysis-module)
-   - [4. upstream-analysis module](#4-upstream-analysis-module)
-   - [5. integrative-analysis module](#5-integrative-analysis-module)
-   - [6. cluster-cell-calling module](#6-cluster-cell-calling-module)
-   - [7. cell-types-annotation module](#7-cell-types-annotation-module)
-   - [8. rshiny-app module](#8-rshiny-app-module)
-   - [9. project-updates module](#9-project-updates-module)
-   - [10. Other available modules](#10-other-available-modules)
+   - [2. Run the fastqc-analysis module](#2-run-the-fastqc-analysis-module)
+   - [3. Run the cellranger-analysis module](#3-run-the-cellranger-analysis-module)
+   - [4. Run the upstream-analysis module](#4-run-the-upstream-analysis-module)
+   - [5. Run the integrative-analysis module](#5-run-the-integrative-analysis-module)
+   - [6. Run the cluster-cell-calling module](#6-run-the-cluster-cell-calling-module)
+   - [7. Run the cell-types-annotation module](#7-run-the-cell-types-annotation-module)
+   - [8. Run the rshiny-app module](#8-run-the-rshiny-app-module)
+   - [9. Run the project-updates module](#9-run-the-project-updates-module)
+   - [10. Run other available modules](#10-run-other-available-modules)
    
    
 ---
