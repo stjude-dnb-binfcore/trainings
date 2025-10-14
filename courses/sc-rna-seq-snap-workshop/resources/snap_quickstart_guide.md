@@ -1,6 +1,11 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 
 <p align="center">
-  <img src="img/DNB-BINF-Core-logo.png" alt="DNB Logo" width="180">
+  <img src="../img/DNB-BINF-Core-logo.png" alt="DNB Logo" width="180">
 </p>
 
 <h1 align="center">DNB Training</h1>
@@ -82,6 +87,7 @@ ssh username@hpc.stjude.org
 ```
 *Enter your password when prompted.*
 
+
 ### 2. Start an interactive session
 
 Open an interactive node on the HPC and adjust memory/resources as needed.
@@ -109,7 +115,7 @@ pwd
 
 Click the below link to open the repo:
 
-https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap
+https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap-dnb-training
 
 Then, click **Fork** on the top right section of the GitHub page
 
@@ -127,7 +133,7 @@ Click **Create Fork** to finalize.
 To copy the repository from GitHub to HPC environment, go to your GitHub fork page and click **Code** button (in green) and copy the url. Then, paste the url in HPC terminal as below:
 
 ```
-git clone https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap.git
+git clone https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap-dnb-training.git
 ```
 
 Check the contents of the repository:
@@ -170,7 +176,6 @@ This hands-on workshop uses a training dataset (FASTQ files) stored on internal 
 
 *DNB members should have access to this location.*
 
-**Note: For now, use the provided project_config.yaml file. Replace the existing YAML file in your cloned repository with this one before running the pipeline.**
 
 ### 2. Create a metadata file
 
@@ -200,7 +205,7 @@ This pipeline is designed so that you only need to edit **one file** to run the 
 
 **Note: For now, use the provided `project_parameters.Config.yaml` file and make necessary changes. Replace the existing `.yaml` file in your cloned repository with this one before running the pipeline.**
 
-*`project_parameters.Config.yaml` file should be placed in `sc-rna-seq-snap-dnb-training-**YOUR-FIRST-NAME**/`.
+*`project_parameters.Config.yaml` file should be placed in `sc-rna-seq-snap-dnb-training-**YOUR-FIRST-NAME**/`.*
 
 ### 1. Required paths
 
@@ -274,7 +279,7 @@ Once your `project_parameters.Config.yaml` and `project_metadata.tsv` files are 
 <div style="background-color:#f8f9fa;border:2px solid #e1e4e8;
 padding:8px 12px;margin:10px 0;font-size:85%;border-radius:6px;">
 <strong>Note:</strong> After each run, check <code>job.out</code> and <code>job.err</code> 
-to confirm the module ran successfully and contact the <strong>DNB Single Cell Bioinformatics Core,</strong> if issues occur.
+to confirm the module ran successfully and contact the <strong>DNB Bioinformatics Core,</strong> if issues occur.
 </div>
 
 
