@@ -343,14 +343,6 @@ cd upstream-analysis/
 bsub < lsf-script.txt
 ```
 
-**Note:** You may see `Error in quantile.default():` message because this workshop dataset has already been curated (no empty droplets). Please replace the following code in `01_run_SoupX.Rmd` at line 258:
-
-```
-sc <- autoEstCont(sc_raw, forceAccept = TRUE, tfidfMin = 0.1, soupQuantile = 0.9)
-
-```
-This adjustment allows the script to continue and generate results as expected. Continue..
-
 
 ### 5. Run the integrative-analysis module
 
