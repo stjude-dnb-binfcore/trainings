@@ -470,7 +470,7 @@ needed.</p>
 <div id="check-your-location" class="section level3">
 <h3>3. Check your location</h3>
 <p>As soon as you enter the HPC environment, your current location will
-be: <code>/home/username/</code>.</p>
+be: <code>/home/&lt;username&gt;/</code>.</p>
 <p>To confirm, run below commmand:</p>
 <pre><code>pwd</code></pre>
 <hr />
@@ -495,12 +495,12 @@ sc-rna-seq-snap-dnb-training-<strong>YOUR-FIRST-NAME</strong></li>
 </div>
 <div id="clone" class="section level3">
 <h3>2. Clone</h3>
-<p>To copy the repository from GitHub to HPC environment, go to your
-GitHub fork page and click <strong>Code</strong> button (in green) and
-copy the url. Then, paste the url in HPC terminal as below:</p>
+<p>To keep things straightforward, we ask everyone to clone the forked
+sc-rna-seq-snap-dnb-training repository directly. This will ensure that
+all participants have a consistent and standardized starting point.</p>
 <pre><code>git clone https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap-dnb-training.git</code></pre>
 <p>Check the contents of the repository:</p>
-<pre><code>cd sc-rna-seq-snap-dnb-training-**YOUR-FIRST-NAME**
+<pre><code>cd sc-rna-seq-snap-dnb-training
 
 ls</code></pre>
 <hr />
@@ -540,8 +540,7 @@ on internal DNB research storage; see the
 <p>Make a tab-separated (TSV) file named
 <code>project_metadata.tsv</code> and save it in
 <code>analyses/data/project_metadata/</code> with in your project
-folder,
-<code>sc-rna-seq-snap-dnb-training-**YOUR-FIRST-NAME**/</code></p>
+folder, <code>sc-rna-seq-snap-dnb-training/</code></p>
 <p>It can include one or more samples, as long as it contains at least
 the following columns in this exact order: ID, SAMPLE, and FASTQ. - The
 <code>ID</code> column must contain unique values. - The
@@ -570,13 +569,14 @@ to the fastq files.</p>
 </tr>
 </tbody>
 </table>
-<p><em>Easiest way: Edit the provided template in
-<code>project_metadata/</code></em></p>
-<p>Add additional metadata columns after these three columns.</p>
-<p><strong>Note: For now, use the provided
+<p><em>The easiest way is to edit the provided template in
+<code>project_metadata/</code>.</em></p>
+<p>You may add additional metadata columns after these three required
+columns as needed.</p>
+<p><strong>Note:</strong> For now, use the provided
 <code>project_metadata.tsv</code> file. Replace the existing
 <code>.tsv</code> file in your cloned repository with this one before
-running the pipeline.</strong></p>
+running the pipeline.</p>
 <hr />
 </div>
 </div>
@@ -592,16 +592,15 @@ with your HPC paths and project info. That’s it!</p>
 changes. Replace the existing <code>.yaml</code> file in your cloned
 repository with this one before running the pipeline.</strong></p>
 <p><em><code>project_parameters.Config.yaml</code> file should be placed
-in
-<code>sc-rna-seq-snap-dnb-training-**YOUR-FIRST-NAME**/</code>.</em></p>
+in <code>sc-rna-seq-snap-dnb-training/</code>.</em></p>
 <div id="required-paths" class="section level3">
 <h3>1. Required paths</h3>
 <p><em>Replace <your-username> with your actual HPC username</em></p>
 <pre><code># Project folder location - line 2
-root_dir: /home/&lt;username&gt;/projects/sc-rna-seq-snap-dnb-training**YOUR-FIRST-NAME**
+root_dir: /home/&lt;username&gt;/sc-rna-seq-snap-dnb-training
 
 # Cellranger Results location - line 3
-data_dir: /home/&lt;username&gt;/sc-rna-seq-snap-dnb-training**YOUR-FIRST-NAME**/analyses/cellranger-analysis/results/02_cellranger_count/DefaultParameters    
+data_dir: /home/&lt;username&gt;/sc-rna-seq-snap-dnb-training/analyses/cellranger-analysis/results/02_cellranger_count/DefaultParameters
 
 # `project_metadata.tsv` file location - line 4 :  Use the provided metadata file path in yaml file for now
 metadata_dir:
@@ -668,14 +667,14 @@ the <strong>DNB Bioinformatics Core,</strong> if issues occur.</p>
 <h3>1. Navigate to the analyses folder</h3>
 <p>Before running any module, make sure you are inside your working
 directory. In this case, it is
-<code>/home/username/sc-rna-seq-snap-dnb-training**YOUR-FIRST-NAME**/</code>.
-Run the following commands to do this:</p>
-<pre><code>cd /home/username/sc-rna-seq-snap-dnb-training**YOUR-FIRST-NAME**/
+<code>/home/&lt;username&gt;/sc-rna-seq-snap-dnb-training/</code>. Run
+the following commands to do this:</p>
+<pre><code>cd /home/&lt;username&gt;/sc-rna-seq-snap-dnb-training/
 pwd
 
 cd analyses/
 ls</code></pre>
-<p>You should see subfolders like <code>fastqc-analysis</code>,
+<p>You should see sub-folders like <code>fastqc-analysis</code>,
 <code>cellranger-analysis</code> and so on.</p>
 </div>
 <div id="run-the-fastqc-analysis-module" class="section level3">
