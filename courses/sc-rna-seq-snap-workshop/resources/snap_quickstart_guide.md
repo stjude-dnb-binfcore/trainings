@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="../img/DNB-BINF-Core-logo.png" alt="DNB Logo" width="180">
+  <img src="../img/DNB-BINF-Core-logo.png" alt="DNB Logo" width="560px">
 </p>
 
 <h1 align="center">DNB Training</h1>
@@ -94,9 +94,9 @@ bsub -P hpcf_interactive -J hpcf_interactive -n 2 -q standard -R "rusage[mem=16G
 
 ### 3. Check your location
 
-As soon as you enter the HPC environment, your current location will be: `/home/<username>/`.
+When you log into the HPC environment, your current location will be: `/home/<username>/`.
 
-To confirm, run below commmand:
+To confirm your current location, run the following command:
 
 ```
 pwd
@@ -116,7 +116,7 @@ Then, click **Fork** on the top right section of the GitHub page
 
 On the next page:
 
-1. **Choose an owner**: stjude-dnb-binfcore
+1. **Choose an owner**: Your own GitHub profile
 2. **Repository name**: sc-rna-seq-snap-dnb-training-**YOUR-FIRST-NAME**
 3. **Description**: dnb-training-2025-10-29
 
@@ -153,7 +153,7 @@ module load singularity/4.1.1
 
 ### 2. Pull the singularity container
 
-Pull the singularity container from the `sc-rna-seq-snap` root_dir
+Pull the singularity container from the `sc-rna-seq-snap-dnb-training` root_dir
 
 ```
 singularity pull docker://achronistjude/rstudio_4.4.0_seurat_4.4.0:latest
@@ -167,14 +167,14 @@ The metadata file is an essential input for running the pipeline. It specifies w
 
 ### 1. Training data
 
-This hands-on workshop uses a training dataset (FASTQ files) stored on internal DNB research storage; see the `project_parameters.Config.yaml` file for exact location.
+We provide a training dataset (FASTQ files). Please see the `project_parameters.Config.yaml` file for more information.
 
 *DNB members should have access to this location.*
 
 
 ### 2. Create a metadata file
 
-Make a tab-separated (TSV) file named `project_metadata.tsv` and save it in `analyses/data/project_metadata/` with in your project folder, `sc-rna-seq-snap-dnb-training/`
+Make a tab-separated (TSV) file named `project_metadata.tsv` and save it in `analyses/data/project_metadata/` with in your project folder, `sc-rna-seq-snap-dnb-training/`.
 
 It can include one or more samples, as long as it contains at least the following columns in this exact order: ID, SAMPLE, and FASTQ. 
 - The `ID ` column must contain unique values. 
@@ -277,7 +277,7 @@ Once your `project_parameters.Config.yaml` and `project_metadata.tsv` files are 
 <div style="background-color:#f8f9fa;border:2px solid #e1e4e8;
 padding:8px 12px;margin:10px 0;font-size:85%;border-radius:6px;">
 <strong>Note:</strong> After each run, check <code>job.out</code> and <code>job.err</code> 
-to confirm the module ran successfully and contact the <strong>DNB Bioinformatics Core,</strong> if issues occur.
+to confirm the module ran successfully. If you encounter any issues, please contact the <strong>DNB Bioinformatics Core</strong> —you can reach us via the #help-sc-rna-seq-snap channel on Slack or email [Antonia Chroni](antonia.chroni@stjude.org) directly. For more contact options, please refer to our [wiki Contact page](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/wiki/Contact).
 </div>
 
 
