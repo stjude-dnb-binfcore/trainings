@@ -1,8 +1,3 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
 
 <p align="center">
   <img src="../img/DNB-BINF-Core-logo.png" alt="DNB Logo" width="180">
