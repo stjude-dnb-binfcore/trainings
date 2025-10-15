@@ -51,8 +51,8 @@ The course is intended for wet lab biologists or bioinformaticians that are inte
 ├── lectures
 ├── README.md
 └── resources
-|   ├── snap_quickstart_guide.md
 |   ├── snap_quickstart_guide.html
+|   ├── snap_quickstart_guide.md
 |__ └── links-to-resources.md
 ```
 
