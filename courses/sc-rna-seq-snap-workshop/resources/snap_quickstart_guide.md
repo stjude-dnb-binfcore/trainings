@@ -274,11 +274,11 @@ Save the `project_parameters.Config.yaml` file and close it.
 
 Once your `project_parameters.Config.yaml` and `project_metadata.tsv` files are ready, you can begin running modules step by step. Each module performs a major step of the single-cell RNA-seq analysis.
 
-<div style="background-color:#f8f9fa;border:2px solid #e1e4e8;
-padding:8px 12px;margin:10px 0;font-size:85%;border-radius:6px;">
-<strong>Note:</strong> After each run, check <code>job.out</code> and <code>job.err</code> 
-to confirm the module ran successfully. If you encounter any issues, please contact the <strong>DNB Bioinformatics Core</strong> —you can reach us via the #help-sc-rna-seq-snap channel on Slack or email [Antonia Chroni](antonia.chroni@stjude.org) directly. For more contact options, please refer to our [wiki Contact page](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/wiki/Contact).
-</div>
+
+**Note:**  
+After each run, check `job.out` and `job.err` to confirm the module ran successfully. If you encounter any issues, please contact the **DNB Bioinformatics Core** — you can reach us via the **#help-sc-rna-seq-snap** channel on Slack or email [Antonia Chroni](mailto:antonia.chroni@stjude.org) directly. For more contact options, please refer to our [Contact page](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap/wiki/Contact) on the DNB Bioinformatics Core wiki.
+
+
 
 
 ### 1. Navigate to the analyses folder
