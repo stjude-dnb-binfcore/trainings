@@ -147,7 +147,7 @@ ls
 ```
 
 
-**IMPORTANT NOTE: The repository `sc-rna-seq-snap-dnb-training` is intended solely for training purposes. To execute the Snap pipeline on individual research projects, users should instead fork and clone the main repository, `sc-rna-seq-snap`.**
+**IMPORTANT NOTE: The repository `sc-rna-seq-snap-dnb-training` is intended solely for training purposes. To execute the Snap pipeline on individual research projects, users should instead fork and clone the main repository, [sc-rna-seq-snap](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap).**
 
 
 ---
@@ -213,7 +213,7 @@ This pipeline is designed so that you only need to edit **one file** to run the 
 
 **Note: For now, use the provided `project_parameters.Config.yaml` file and make necessary changes. Replace the existing `.yaml` file in your cloned repository with this one before running the pipeline.**
 
-*project_parameters.Config.yaml file should be placed in sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME>*
+The `project_parameters.Config.yaml` file should be placed in the `sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME>` repo.
 
 ### 1. Required paths
 
@@ -229,7 +229,7 @@ data_dir: "/home/<username>/sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME>/analy
 # `project_metadata.tsv` file location - line 4 :  Use the provided metadata file path in yaml file for now
 metadata_dir: "/home/<username>/sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME>/data/project_metadata"
 
-# Reference genome location - line 25 : Use the provided reference path in yaml filefor now
+# Reference genome location - line 25 : Use the provided reference path in yaml file for now
 genome_reference_path: 
 
 # Cell type marker file location - line 121 : Use the provided file path in yaml file for now

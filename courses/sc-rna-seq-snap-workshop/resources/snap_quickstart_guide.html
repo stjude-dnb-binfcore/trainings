@@ -517,8 +517,7 @@ ls</code></pre>
 <p><strong>IMPORTANT NOTE: The repository
 <code>sc-rna-seq-snap-dnb-training</code> is intended solely for
 training purposes. To execute the Snap pipeline on individual research
-projects, users should instead fork and clone the main repository,
-<code>sc-rna-seq-snap</code>.</strong></p>
+projects, users should instead fork and clone the main repository, <a href="https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap">sc-rna-seq-snap</a>.</strong></p>
 <hr />
 </div>
 </div>
@@ -610,8 +609,9 @@ with your HPC paths and project info. That’s it!</p>
 <code>project_parameters.Config.yaml</code> file and make necessary
 changes. Replace the existing <code>.yaml</code> file in your cloned
 repository with this one before running the pipeline.</strong></p>
-<p><em>project_parameters.Config.yaml file should be placed in
-sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME></em></p>
+<p>The <code>project_parameters.Config.yaml</code> file should be placed
+in the <code>sc-rna-seq-snap-dnb-training-&lt;YOUR-FIRST-NAME&gt;</code>
+repo.</p>
 <div id="required-paths" class="section level3">
 <h3>1. Required paths</h3>
 <p><em>Replace <your-username> with your actual HPC username</em></p>
@@ -624,7 +624,7 @@ data_dir: &quot;/home/&lt;username&gt;/sc-rna-seq-snap-dnb-training-&lt;YOUR-FIR
 # `project_metadata.tsv` file location - line 4 :  Use the provided metadata file path in yaml file for now
 metadata_dir: &quot;/home/&lt;username&gt;/sc-rna-seq-snap-dnb-training-&lt;YOUR-FIRST-NAME&gt;/data/project_metadata&quot;
 
-# Reference genome location - line 25 : Use the provided reference path in yaml filefor now
+# Reference genome location - line 25 : Use the provided reference path in yaml file for now
 genome_reference_path: 
 
 # Cell type marker file location - line 121 : Use the provided file path in yaml file for now
