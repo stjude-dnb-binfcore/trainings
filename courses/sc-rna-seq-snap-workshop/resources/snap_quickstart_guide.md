@@ -78,7 +78,7 @@ For best practices and detailed guidelines on effectively using the Snap pipelin
 Login to St Jude's HPC environment using your login credentials.
 
 ```
-ssh username@hpc.stjude.org
+ssh <username>@hpc.stjude.org
 ```
 *Enter your password when prompted.*
 
@@ -102,6 +102,12 @@ To confirm your current location, run the following command:
 pwd
 ```
 
+To access `/home/<username>/` on Finder or File Explorer, click this link:
+
+**MacOS:** smb://rs1.stjude.org/clusterhome/<username>
+
+**Windows:** `Z:\ResearchHome\ClusterHome\<username>`
+
 ---
 
 ## Fork and Clone Snap Repository
@@ -119,25 +125,30 @@ On the next page:
 1. **Choose an owner**: Your own GitHub profile
 2. **Repository name**: sc-rna-seq-snap-dnb-training-**YOUR-FIRST-NAME**
 3. **Description**: dnb-training-2025-10-29
+4. Ensure that the option **“Copy the main branch only”** remains checked.
 
 Click **Create Fork** to finalize.
 
 
 ### 2. Clone
 
-To keep things straightforward, we ask everyone to clone the forked sc-rna-seq-snap-dnb-training repository directly. This will ensure that all participants have a consistent and standardized starting point.
+After forking the repository, the next step is to clone your fork to your **HPC local home directory**. Locate `Code` button on your GitHub forked repository and click on it to see the cloning url. Copy the url and paste it on your terminal as shown below. This will create a local working copy that you can modify and run within your HPC environment. Replace **"YOUR-FIRST-NAME"** with your actual first name as used in your forked repository name. 
 
 ```
-git clone https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap-dnb-training.git
+git clone https://github.com/<your-github-username>/sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME>.git>
 ```
 
 Check the contents of the repository:
 
 ```
-cd sc-rna-seq-snap-dnb-training
+cd sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME>
 
 ls
 ```
+
+
+**IMPORTANT NOTE: The repository `sc-rna-seq-snap-dnb-training` is intended solely for training purposes. To execute the Snap pipeline on individual research projects, users should instead fork and clone the main repository, [sc-rna-seq-snap](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap).**
+
 
 ---
 
@@ -153,7 +164,7 @@ module load singularity/4.1.1
 
 ### 2. Pull the singularity container
 
-Pull the singularity container from the `sc-rna-seq-snap-dnb-training` root_dir
+Pull the singularity container from the `sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME>` root_dir
 
 ```
 singularity pull docker://achronistjude/rstudio_4.4.0_seurat_4.4.0:latest
@@ -167,14 +178,14 @@ The metadata file is an essential input for running the pipeline. It specifies w
 
 ### 1. Training data
 
-We provide a training dataset (FASTQ files). Please see the `project_parameters.Config.yaml` file for more information.
+We provide a training dataset (FASTQ files) that is located on a shared space on HPC. To access FASTQ files, please use the path provided during the session.
 
-*DNB members should have access to this location.*
+*All HPC account holders should have access to this location.*
 
 
 ### 2. Create a metadata file
 
-Make a tab-separated (TSV) file named `project_metadata.tsv` and save it in `analyses/data/project_metadata/` with in your project folder, `sc-rna-seq-snap-dnb-training/`.
+Make a tab-separated (TSV) file named `project_metadata.tsv` and save it in `analyses/data/project_metadata/` with in your project folder, `sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME>/`.
 
 It can include one or more samples, as long as it contains at least the following columns in this exact order: ID, SAMPLE, and FASTQ. 
 - The `ID ` column must contain unique values. 
@@ -187,12 +198,11 @@ It can include one or more samples, as long as it contains at least the followin
 | DYE001 | seq_submission_code1_sample1 | /absolute_path/seq_submission_code1/replicate1,/absolute_path/seq_submission_code1/replicate2 | 
 
 
-
 *The easiest way is to edit the provided template in `project_metadata/`.*
 
 You may add additional metadata columns after these three required columns as needed.
 
-**Note:** For now, use the provided `project_metadata.tsv` file. Replace the existing `.tsv` file in your cloned repository with this one before running the pipeline.
+**Note:** For now, use the provided `project_metadata.tsv` file located in the shared space. Replace the existing `.tsv` file in your cloned repository with the one from shared space before running the pipeline.
 
 
 ---
@@ -203,7 +213,7 @@ This pipeline is designed so that you only need to edit **one file** to run the 
 
 **Note: For now, use the provided `project_parameters.Config.yaml` file and make necessary changes. Replace the existing `.yaml` file in your cloned repository with this one before running the pipeline.**
 
-*`project_parameters.Config.yaml` file should be placed in `sc-rna-seq-snap-dnb-training/`.*
+The `project_parameters.Config.yaml` file should be placed in the `sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME>` repo.
 
 ### 1. Required paths
 
@@ -211,15 +221,15 @@ This pipeline is designed so that you only need to edit **one file** to run the 
 
 ```
 # Project folder location - line 2
-root_dir: /home/<username>/sc-rna-seq-snap-dnb-training
+root_dir: "/home/<username>/sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME>"
 
 # Cellranger Results location - line 3
-data_dir: /home/<username>/sc-rna-seq-snap-dnb-training/analyses/cellranger-analysis/results/02_cellranger_count/DefaultParameters
+data_dir: "/home/<username>/sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME>/analyses/cellranger-analysis/results/02_cellranger_count/DefaultParameters"
 
 # `project_metadata.tsv` file location - line 4 :  Use the provided metadata file path in yaml file for now
-metadata_dir:
+metadata_dir: "/home/<username>/sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME>/data/project_metadata"
 
-# Reference genome location - line 25 : Use the provided reference path in yaml filefor now
+# Reference genome location - line 25 : Use the provided reference path in yaml file for now
 genome_reference_path: 
 
 # Cell type marker file location - line 121 : Use the provided file path in yaml file for now
@@ -283,10 +293,10 @@ After each run, check `job.out` and `job.err` to confirm the module ran successf
 
 ### 1. Navigate to the analyses folder
 
-Before running any module, make sure you are inside your working directory. In this case, it is `/home/<username>/sc-rna-seq-snap-dnb-training/`. Run the following commands to do this:
+Before running any module, make sure you are inside your working directory. In this case, it is `/home/<username>/sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME>/`. Run the following commands to do this:
 
 ```
-cd /home/<username>/sc-rna-seq-snap-dnb-training/
+cd /home/<username>/sc-rna-seq-snap-dnb-training-<YOUR-FIRST-NAME>/
 pwd
 
 cd analyses/
