@@ -45,6 +45,7 @@ The course is intended for wet lab biologists or bioinformaticians that are inte
 ├── img
 |   └── DNB-BINF-Core-logo.png
 ├── lectures
+|   └── sc-epigenie-repo-2025-10-29.pdf
 ├── README.md
 └── resources
 |__ └── links-to-resources.md
