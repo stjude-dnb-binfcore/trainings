@@ -36,7 +36,7 @@ The course is intended for wet lab biologists or bioinformaticians that are inte
 ## Lessons and Materials 
 
 * `./resources`: supplemental materials and learning resources 
-* `./lectures`: slides covering the `Learning Objectives`: [sc-epigenie-repo-2025-10-29](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-epigenie-repo/lectures/sc-epigenie-repo-2025-10-29.pdf). _Currently under construction—stay tuned for updates!_ 🚧
+* `./lectures`: slides covering the `Learning Objectives`: [sc-epigenie-repo-2025-10-29](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-epigenie-repo/lectures/sc-epigenie-repo-2025-10-29.pdf). 
 
  
 ## Below is the main directory structure listing the analyses and data files used in this repository
