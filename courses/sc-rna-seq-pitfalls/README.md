@@ -34,8 +34,9 @@ The course is intended for biologists and bioinformaticians that are interested 
 ## Lessons and Materials 
 
 * `./resources`: supplemental materials and resources
-* `./lectures`: slides covering the `Learning Objectives`: [sc-rna-seq-pitfalls-2025-10-30](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-rna-seq-pitfalls/lectures). _Currently under construction—stay tuned for updates!_ 🚧
+* `./lectures`: slides covering the `Learning Objectives`: [sc-rna-seq-pitfalls-2025-10-30](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-rna-seq-pitfalls/lectures/sc-rna-seq-pitfalls-2025-10-30.pdf).
 
+* St. Jude employees can access a recording from the workshop [here](https://sjcrh.sharepoint.com/:v:/s/Team-DNB_BINF_Core/EZuoQF45A-NPnxrxe0z3DPEBHyOcsW2iy0bKrAZWmh58hA?e=699NeF&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D).
  
 ## Below is the main directory structure listing the analyses and data files used in this repository
 
@@ -43,6 +44,7 @@ The course is intended for biologists and bioinformaticians that are interested 
 ├── img
 |   └── DNB-BINF-Core-logo.png
 ├── lectures
+|   └── sc-rna-seq-pitfalls-2025-10-30.pdf
 ├── README.md
 └── resources
 |__ └── links-to-resources.md
