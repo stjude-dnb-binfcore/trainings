@@ -38,6 +38,8 @@ The course is intended for wet lab biologists or bioinformaticians that are inte
 * `./resources`: supplemental materials and learning resources 
 * `./lectures`: slides covering the `Learning Objectives`: [sc-epigenie-repo-2025-10-29](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-epigenie-repo/lectures/sc-epigenie-repo-2025-10-29.pdf). 
 
+* St. Jude employees can access a recording from the workshop [here](https://sjcrh-my.sharepoint.com/personal/cramirez_stjude_org/_layouts/15/stream.aspx?id=%2Fpersonal%2Fcramirez%5Fstjude%5Forg%2FDocuments%2FRecordings%2FSingle%2Dcell%20ATAC%2Dseq%20workflow%2D20251029%5F103004%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ed5a2a4bb%2D1801%2D46de%2Da350%2D8046a45ac175).
+ 
  
 ## Below is the main directory structure listing the analyses and data files used in this repository
 
