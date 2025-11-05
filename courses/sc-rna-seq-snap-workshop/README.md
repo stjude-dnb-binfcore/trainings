@@ -41,6 +41,7 @@ The course is intended for wet lab biologists or bioinformaticians that are inte
 
 * `./resources`: supplemental materials and learning resources 
 * `./lectures`: [sc-rna-seq-snap-workshop-2025-10-29](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-rna-seq-snap-workshop/lectures). _Currently under construction—stay tuned for updates!_ 🚧
+* St. Jude employees can access a recording from the workshop [here](https://teams.microsoft.com/l/meetingrecap?driveId=b%21fN4oOhnmUUuqlHPV1c7pwEz1ilgyhJ1Lk_sJgdXcVo34BRz2JdXfS7NNnTxRnyuG&driveItemId=01AWJWDAVLIDUF4GK3HVDL2VBM566ZN5Y3&sitePath=https%3A%2F%2Fsjcrh-my.sharepoint.com%2F%3Av%3A%2Fg%2Fpersonal%2Fajannu_stjude_org%2FEatA6F4ZWz1GvVQs772W9xsBpDD2hQLHXfca3zLw8vNHNw&fileUrl=https%3A%2F%2Fsjcrh-my.sharepoint.com%2Fpersonal%2Fajannu_stjude_org%2FDocuments%2FRecordings%2FSNAP%2520Hands%2520On-20251029_133448-Meeting%2520Recording.mp4%3Fweb%3D1&iCalUid=040000008200E00074C5B7101A82E008000000002516D392FE48DC01000000000000000010000000AB6F052E372ECF48B08125DB93C82D15&threadId=19%3Ameeting_NTAxOTA4YzctNDJhMC00ODAzLWEyYWItNzBiOGQzYjI3NDk3%40thread.v2&organizerId=14012ba9-3073-423e-94c5-c98d88650bba&tenantId=22340fa8-9226-4871-b677-d3b3e377af72&callId=e98bce8a-a706-4c83-8864-cc6d22c85647&threadType=Meeting&meetingType=Scheduled&subType=RecapSharingLink_RecapCore)
 
  
 ## Below is the main directory structure listing the analyses and data files used in this repository
