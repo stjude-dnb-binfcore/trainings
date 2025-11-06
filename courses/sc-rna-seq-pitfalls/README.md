@@ -8,7 +8,7 @@
 
 The Pitfalls of sc/snRNA-seq workshop provides an overview of some common pitfalls that can occur when doing single cell or single nuclei RNA-seq analysis. This workshop is an initiative of our team at the [Bioinformatics Core at the Department of Developmental Neurobiology at the St. Jude Children's Research Hospital](https://www.stjude.org/research/departments/developmental-neurobiology/shared-resources/bioinformatic-core.html).
 
-This workshop will focus on potential mistakes and how to avoid them as well as steps you may need to fine tune when performing sc/snRNA-seq analysis with Seurat. In paricular, we will cover common analysis steps starting with cell-level QC and filtering through cell type annotation, including normalization, variable gene selection, scaling, dimensionality reduction, clustering, integration, and differential expression analysis.
+This workshop will focus on potential mistakes and how to avoid them as well as steps you may need to fine tune when performing sc/snRNA-seq analysis with Seurat. In particular, we will cover common analysis steps starting with cell-level QC and filtering through cell type annotation, including normalization, variable gene selection, scaling, dimensionality reduction, clustering, integration, and differential expression analysis.
 
 
 
@@ -35,7 +35,6 @@ The course is intended for biologists and bioinformaticians that are interested 
 
 * `./resources`: supplemental materials and resources
 * `./lectures`: slides covering the `Learning Objectives`: [sc-rna-seq-pitfalls-2025-10-30](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-rna-seq-pitfalls/lectures/sc-rna-seq-pitfalls-2025-10-30.pdf).
-
 * St. Jude employees can access a recording from the workshop [here](https://sjcrh.sharepoint.com/:v:/s/Team-DNB_BINF_Core/EZuoQF45A-NPnxrxe0z3DPEBHyOcsW2iy0bKrAZWmh58hA?e=699NeF&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D).
  
 ## Below is the main directory structure listing the analyses and data files used in this repository
