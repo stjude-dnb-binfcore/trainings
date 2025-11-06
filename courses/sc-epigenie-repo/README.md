@@ -38,7 +38,7 @@ The course is intended for wet lab biologists or bioinformaticians that are inte
 * `./resources`: supplemental materials and learning resources 
 * `./lectures`: slides covering the `Learning Objectives`: [sc-epigenie-repo-2025-10-29](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-epigenie-repo/lectures/sc-epigenie-repo-2025-10-29.pdf). 
 
-* St. Jude employees can access a recording from the workshop [here](https://sjcrh-my.sharepoint.com/personal/cramirez_stjude_org/_layouts/15/stream.aspx?id=%2Fpersonal%2Fcramirez%5Fstjude%5Forg%2FDocuments%2FRecordings%2FSingle%2Dcell%20ATAC%2Dseq%20workflow%2D20251029%5F103004%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ed5a2a4bb%2D1801%2D46de%2Da350%2D8046a45ac175).
+* St. Jude employees can access a recording from the workshop [here](https://sjcrh.sharepoint.com/sites/Team-DNB_BINF_Core/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FTeam%2DDNB%5FBINF%5FCore%2FShared%20Documents%2FLearning%2FTraining%5FRecordings&viewid=1f4431bb%2Df39e%2D4ff8%2D8fdc%2Dea76e7fb458b&newTargetListUrl=%2Fsites%2FTeam%2DDNB%5FBINF%5FCore%2FShared%20Documents&viewpath=%2Fsites%2FTeam%2DDNB%5FBINF%5FCore%2FShared%20Documents%2FForms%2FAllItems%2Easpx&ovuser=22340fa8%2D9226%2D4871%2Db677%2Dd3b3e377af72%2Cachroni%40stjude%2Eorg&OR=Teams%2DHL&CT=1762465971294&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNTEwMTYxNjUwOSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D).
  
  
 ## Below is the main directory structure listing the analyses and data files used in this repository
