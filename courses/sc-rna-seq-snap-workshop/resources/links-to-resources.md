@@ -15,7 +15,7 @@
 
 ## Containers for Cancer Informatics
 * [Docker for beginners](https://docker-curriculum.com/)
-* [Docker for Data Scientists](https://towardsdatascience.com/docker-for-data-scientists-5732501f0ba4)
+
 
 
 ### Questions?
