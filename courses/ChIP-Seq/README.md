@@ -19,7 +19,7 @@ Please see the [CAB’s QC and Peak Calling pipeline](https://wiki.stjude.org/di
 
 ## Access to the workshop recording
 
-St. Jude employees can access the [recording from the workshop](https://sjcrh-my.sharepoint.com/:v:/g/personal/sfreshou_stjude_org/EfAqM3KcgRlNho8TXNckL80Bl1JPTsb-k3F_t8W6c-Hewg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ejIZLy).
+St. Jude employees can access a recording from the workshop [here](https://sjcrh.sharepoint.com/:v:/s/Team-DNB_BINF_Core/EZkjgxd8hgVDgk59l3GZTJ8BGKLghrzqIR5FmJH5oHqQOw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=B63sem).
 
 
 ## Below is the main directory structure listing the analyses and data files used in this repository
