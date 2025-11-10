@@ -38,7 +38,7 @@ The course is intended for wet lab biologists or bioinformaticians that are inte
 * `./resources`: supplemental materials and learning resources 
 * `./lectures`: slides covering the `Learning Objectives`: [sc-epigenie-repo-2025-10-29](https://github.com/stjude-dnb-binfcore/trainings/tree/main/courses/sc-epigenie-repo/lectures/sc-epigenie-repo-2025-10-29.pdf). 
 
-* St. Jude employees can access a recording from the workshop [here](https://sjcrh.sharepoint.com/sites/Team-DNB_BINF_Core/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FTeam%2DDNB%5FBINF%5FCore%2FShared%20Documents%2FLearning%2FTraining%5FRecordings&viewid=1f4431bb%2Df39e%2D4ff8%2D8fdc%2Dea76e7fb458b&newTargetListUrl=%2Fsites%2FTeam%2DDNB%5FBINF%5FCore%2FShared%20Documents&viewpath=%2Fsites%2FTeam%2DDNB%5FBINF%5FCore%2FShared%20Documents%2FForms%2FAllItems%2Easpx&ovuser=22340fa8%2D9226%2D4871%2Db677%2Dd3b3e377af72%2Cachroni%40stjude%2Eorg&OR=Teams%2DHL&CT=1762465971294&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNTEwMTYxNjUwOSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D).
+* St. Jude employees can access a recording from the workshop [here](https://sjcrh.sharepoint.com/sites/Team-DNB_BINF_Core/_layouts/15/stream.aspx?id=%2Fsites%2FTeam%2DDNB%5FBINF%5FCore%2FShared%20Documents%2FLearning%2FTraining%5FRecordings%2FSingle%2Dcell%20ATAC%2Dseq%20workflow%2D2025%2D10%2D29%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E99e0a776%2D3adf%2D431f%2D8852%2Dfb9d18d6d315).
  
  
 ## Below is the main directory structure listing the analyses and data files used in this repository
