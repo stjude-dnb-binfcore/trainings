@@ -22,6 +22,12 @@ This section outlines **best practices for reporting bugs** so issues are reprod
 
 ---
 
+## How to Check for Hidden Comments on GitHub
+
+This section describes **how to check that all review comments are visible** on PR reviews where GitHub may automatically hide some comments. Checking that all comments are visible to both the author and reviewer prevents miscommunication, reduces the number of re-reviews needed, and ensures that all comments are addressed before approving or merging a PR.
+
+---
+
 
 ### Below is the main directory structure listing the files used in this directory
 
@@ -31,6 +37,7 @@ This section outlines **best practices for reporting bugs** so issues are reprod
 └── resources
 |  ├── code-review-checklist.html
 |  ├── code-review-communication-guidelines.html
+|  ├── how-to-check-hidden-comments-github.html
 |_ └── how-to-report-bugs-github.html
 ```
 
@@ -40,6 +47,8 @@ This section outlines **best practices for reporting bugs** so issues are reprod
 #### Authors
 
 Antonia Chroni, PhD ([@AntoniaChroni](https://github.com/AntoniaChroni))
+
+Sharon Freshour, PhD ([@sharonfreshour](https://github.com/sharonfreshour)))
 
 
 ### Contact
