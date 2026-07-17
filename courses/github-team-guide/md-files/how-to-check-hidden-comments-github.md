@@ -22,7 +22,7 @@ The screenshot below provides an example of what it looks like to have a hidden 
 
 ### 2. Check for comment counts next to files on the `Files changed` page.
 
-If a file has any comments that have not been resolved, there will be a comment symbol and a count corresponding to the number of unresolved comments next to the file name on the `Files changed` page. Before requesting a re-review (as an author), merging a PR (as an author), or approving a PR (as a reviewer), check to make sure there are no unresovled comments that still need to be addressed.
+If a file has any comments that have not been resolved, there will be a comment symbol and a count corresponding to the number of unresolved comments next to the file name on the `Files changed` page. Before requesting a re-review (as an author), merging a PR (as an author), or approving a PR (as a reviewer), check to make sure there are no unresolved comments that still need to be addressed.
 
 The screenshot below provides an example of what these comment counts will look like on the `Files changed` page.
 
