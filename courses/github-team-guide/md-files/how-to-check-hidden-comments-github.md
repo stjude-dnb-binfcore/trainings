@@ -34,7 +34,7 @@ The screenshot below provides an example of what these comment counts will look 
 
 #### Authors
 
-Sharon Freshour, PhD ([@sharonfreshour](https://github.com/sharonfreshour)))
+Sharon Freshour, PhD ([@sharonfreshour](https://github.com/sharonfreshour))
 
 
 ---

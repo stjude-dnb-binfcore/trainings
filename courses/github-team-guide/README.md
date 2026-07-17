@@ -48,7 +48,7 @@ This section describes **how to check that all review comments are visible** on 
 
 Antonia Chroni, PhD ([@AntoniaChroni](https://github.com/AntoniaChroni))
 
-Sharon Freshour, PhD ([@sharonfreshour](https://github.com/sharonfreshour)))
+Sharon Freshour, PhD ([@sharonfreshour](https://github.com/sharonfreshour))
 
 
 ### Contact
